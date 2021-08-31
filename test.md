@@ -1,6 +1,9 @@
 # Ángel Rodés
+
 [Home](https://angelrodes.github.io/)
+
 ---
+
 # This is a test file
 
 Maybe I will use this to deliver the next sessions on `Matlab for Geoscientists`.
