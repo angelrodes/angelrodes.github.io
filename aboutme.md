@@ -8,6 +8,8 @@ I am a **surface-process-modelle**r and **cosmogenic-nuclide-practitioner** at t
 
 Geochronology, Cosmogenic Isotopes, Numerical Modeling, Earth Surface Processes, Glacial Geomorphology, Tectonic Geomorphology.
 
-## Links & contact
+## More info
 
 In [angelrodes.com](https://angelrodes.com), you can find my [CV](https://angelrodes.wordpress.com/angel-rodes-cv/) and information about some pieces of [code](https://angelrodes.wordpress.com/blog-2/), mostly MATLAB/Octave scripts hosted in [github.com/angelrodes](https://github.com/angelrodes), that might be useful to other researchers.
+
+## [Contact](https://angelrodes.wordpress.com/contact/)
