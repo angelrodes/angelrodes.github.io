@@ -1,5 +1,7 @@
 # About me
 
+![image](https://user-images.githubusercontent.com/53089531/131535555-fc4d3645-8d0a-46e6-aa12-cf36ecb6ab1b.png)
+
 I am a **surface-process-modelle**r and **cosmogenic-nuclide-practitioner** at the Scottish Universities Environmental Research Centre ([SUERC](https://www.gla.ac.uk/research/az/suerc/)). Member of [SUERC-Cosmo](https://www.suerc-cosmo.co.uk/). I work in the National Environmental Isotope Facility ([NEIF](http://www.isotopesuk.org/)-Cosmo), feeding cosmonuclide data and data analysis on radioactive and stable cosmonuclides to UK scientists and international collaborators.
 
 ## Research interests
