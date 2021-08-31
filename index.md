@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## About me
 
-You can use the [editor on GitHub](https://github.com/angelrodes/angelrodes.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I am a surface-process-modeller and cosmogenic-nuclide-practitioner at the Scottish Universities Environmental Research Centre ([SUERC](https://www.gla.ac.uk/research/az/suerc/)). Member of [SUERC-Cosmo](https://www.suerc-cosmo.co.uk/). I work in the National Environmental Isotope Facility ([NEIF](http://www.isotopesuk.org/)-Cosmo), feeding ^10^Be, ^26^Al and ^36^Cl data and data analysis on radioactive and stable cosmonuclides to UK scientists and international collaborators.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Research interests
 
-### Markdown
+Geochronology, Cosmogenic Isotopes, Numerical Modeling, Earth Surface Processes, Glacial Geomorphology, Tectonic Geomorphology.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Links & contact
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/angelrodes/angelrodes.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+In [angelrodes.com](https://angelrodes.com), you can find my [CV](https://angelrodes.wordpress.com/angel-rodes-cv/) and information about some pieces of [code](https://angelrodes.wordpress.com/blog-2/), mostly MATLAB/Octave scripts hosted in [github.com/angelrodes](https://github.com/angelrodes), that might be useful to other researchers.
