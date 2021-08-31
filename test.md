@@ -7,11 +7,17 @@
 -->
 # This is a test file
 
+## sceond 
+
+### third
+
+#### fourth?
+
 Maybe I will use this to deliver the next sessions on `Matlab for Geoscientists`.
 
 This is a [link](https://angelrodes.github.io/).
 
-List
+Lists:
 
 * Item 1
 * Item 2
@@ -20,15 +26,30 @@ List
     * Subitem 2.2
 * Item 3
 
-Enumerate
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+Enumerate:
 
 1. first
 1. second
 1. third
 
+*Italic* **Bold** `code`
+
+Table:
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 
-Matlab code
+
+
+Matlab code:
 
 ```matlab
 
