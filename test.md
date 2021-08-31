@@ -9,7 +9,24 @@
 
 Maybe I will use this to deliver the next sessions on `Matlab for Geoscientists`.
 
-I will need to learn how to create an index...
+This is a [link](https://angelrodes.github.io/).
+
+List
+
+* Item 1
+* Item 2
+    * Subitem 2.1
+        * Subitem 2.1.1
+    * Subitem 2.2
+* Item 3
+
+Enumerate
+
+1. first
+1. second
+1. third
+
+
 
 Matlab code
 
