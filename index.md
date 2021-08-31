@@ -1,3 +1,3 @@
-# Angel's pages @ github
+# Index
 
 * [About me](https://angelrodes.github.io/aboutme)
