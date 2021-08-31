@@ -12,7 +12,7 @@ I will need to learn how to create an index...
 
 Matlab code
 
-```Matlab
+```matlab
 
 %% select number of models
 testpointstotal=1e6;
