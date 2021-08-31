@@ -1,6 +1,9 @@
 # Ángel Rodés
+
 [Home](https://angelrodes.github.io/)
+
 ---
+
 # About me
 
 ![image](https://user-images.githubusercontent.com/53089531/131535555-fc4d3645-8d0a-46e6-aa12-cf36ecb6ab1b.png)
