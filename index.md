@@ -1,4 +1,4 @@
-# [./ Ángel Rodés](https://angelrodes.github.io/)
+# Ángel Rodés
 
 ---
 
