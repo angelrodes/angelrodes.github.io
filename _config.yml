@@ -1,6 +1,4 @@
-# theme: jekyll-theme-hacker
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+theme: jekyll-theme-hacker
 title: Ángel Rodés
 permalink: /404.html
 email: "contact@angelrodes.com"
