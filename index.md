@@ -1,6 +1,6 @@
 # About me
 
-I am a surface-process-modeller and cosmogenic-nuclide-practitioner at the Scottish Universities Environmental Research Centre ([SUERC](https://www.gla.ac.uk/research/az/suerc/)). Member of [SUERC-Cosmo](https://www.suerc-cosmo.co.uk/). I work in the National Environmental Isotope Facility ([NEIF](http://www.isotopesuk.org/)-Cosmo), feeding ^10^Be, ^26^Al and ^36^Cl data and data analysis on radioactive and stable cosmonuclides to UK scientists and international collaborators.
+I am a **surface-process-modelle**r and **cosmogenic-nuclide-practitioner** at the Scottish Universities Environmental Research Centre ([SUERC](https://www.gla.ac.uk/research/az/suerc/)). Member of [SUERC-Cosmo](https://www.suerc-cosmo.co.uk/). I work in the National Environmental Isotope Facility ([NEIF](http://www.isotopesuk.org/)-Cosmo), feeding cosmonuclide data and data analysis on radioactive and stable cosmonuclides to UK scientists and international collaborators.
 
 ## Research interests
 
