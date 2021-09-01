@@ -6,4 +6,6 @@
 -->
 # Index
 
+Eventually, this will be populated with course materials.
+
 [About me](https://angelrodes.github.io/aboutme)
