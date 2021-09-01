@@ -492,6 +492,7 @@ end
 Create a new script called **plot-with-error-bars.m** that use a loop to
 plot error bars of the individual concentrations:
 
+```Matlab
     %% This is a script that plots data with error bars
     %% By Me, 2019
 
@@ -515,8 +516,9 @@ plot error bars of the individual concentrations:
     end % end of the loop
     xlabel('Sample')
     ylabel('Concentration')
+```
 
-*Another way of creating a loop is using the statement* `while`:
+Another way of creating a loop is using the statement* `while`:
 
 ```Matlab
 n=0;
