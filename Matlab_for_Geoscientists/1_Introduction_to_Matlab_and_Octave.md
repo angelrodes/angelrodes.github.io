@@ -19,7 +19,7 @@ Matrix-oriented programming
 
 **Matrix-oriented programming**
 
--   MATLAB and Octave are presented as \"MATrix LABoratories\", commonly
+-   MATLAB and Octave are presented as "MATrix LABoratories", commonly
     used for plotting of functions and data, implementation of
     algorithms, creation of user interfaces, and interfacing with
     programs written in other languages.
@@ -73,8 +73,7 @@ least, the following elements:
 -   Editor
 
 ![image](https://user-images.githubusercontent.com/53089531/131697223-d3c2c5a2-9d82-4615-aa81-8b651960de51.png)
-MATLAB
-interface.
+MATLAB interface.
 
 ![image](https://user-images.githubusercontent.com/53089531/131697391-891bde25-1e05-429f-9ff7-d25f78631ba8.png)
 Octave GUI.
@@ -116,9 +115,11 @@ top of the screen is the folder you want to work in. You can see,
 create, delete or open your files using your system browser (explorer,
 finder, nautilus, etc.) or the browser integrated in Matlab or Octave.
 
-*Create a new file called **my-first-file.m**.\
+*Create a new file called **my-first-file.m**.
+
 Avoid using spaces, most symbols, or start with numbers when naming your
-files. **Instead of spaces, use the underscore symbol (\_).**\
+files. **Instead of spaces, use the underscore symbol (\_).**
+
 Also, note that Matlab files always end with `.m`*
 
 **The editor**
@@ -128,11 +129,15 @@ contain any information about formatting. You can open these files using
 any text editor (e.g. notepad). However, the integrated editor format
 the text to highlight the meaning of the text in the Matlab language.
 
-*Open `my_first_file.m` and write:\
-`% This is my first Matlab script.`\
-`disp(’Hello world’)`\
+Open `my_first_file.m` and write:
+
+```Matlab
+% This is my first Matlab script.
+disp(’Hello world’)
+```
+
 then run it using the command `my_first_file` (no `.m`) in the command
-window, or selecting **run** in the menu.*
+window, or selecting **run** in the menu.
 
 **Workspace**
 
@@ -158,7 +163,7 @@ What can we put in the Workspace?
 -   `avogadro=6.022*10^23`
 
 *As for file names, avoid using spaces, most symbols, or start
-parameter's names with numbers.\
+parameter's names with numbers.
 Ending with semicolon (;) prevents the output to be shown in the command
 window, although the parameter is stored in memory. You can check that
 the value of C14halflife is in memory by typing `C14halflife` in the
@@ -172,7 +177,7 @@ Other "special\" accepted values:
 
 -   `unknownvalue=NaN`
 
-*`Inf` means "Infinite\" and `NaN` means "Not a Number\". You can also
+*`Inf` means "Infinite" and `NaN` means "Not a Number". You can also
 generate them by computing `1/0` or `0/0` in the command window.*
 
 **Array of numbers**
@@ -193,9 +198,9 @@ generate them by computing `1/0` or `0/0` in the command window.*
 
 Use `length(data)` to check the size of your array.
 
-*Try also `linspace(0,3,20)` and `logspace(0,2,5)`\
+*Try also `linspace(0,3,20)` and `logspace(0,2,5)`
 to get equally distributed numbers in the linear or logarithmic space.
-Use `odds13` if you want it as a column.\
+Use `odds13` if you want it as a column.
 Access a single (`data(3)` or `data(end)`) or several values of an array
 (`a(7:10)`)*
 
@@ -216,7 +221,8 @@ You can also create a matrix by repeating an array using `repmat`:
 
 `repmat(data,3,1)`
 
-Use `help repmat` to know more about this.\
+Use `help repmat` to know more about this.
+
 These matrices are 2-D (rows and columns). However, MATLAB and Octave
 are also able to handle matrices in multiple dimensions. E.g.
 `ones(3,2,5)` is a 3-D matrix.
@@ -303,11 +309,11 @@ With numbers: `mass*avogadro`
 
 With arrays and matrices: `odds+pairs` but `odds.*pairs`
 
-*Note the difference between `B/A` and `B./A`:\
-\
-"`.*`\", "`./`\" and "`.^`\" are operators used to perform calculations
-element by element (array operations). Avoid using "`*`\", "`/`\" and
-"`^`\" on matrices unless you really want to do matrix operations
+*Note the difference between `B/A` and `B./A`:
+
+"`.*`", "`./`" and "`.^`" are operators used to perform calculations
+element by element (array operations). Avoid using "`*`", "`/`" and
+"`^`" on matrices unless you really want to do matrix operations
 following the rules of linear algebra.*
 
 Call parts of another variable: You can access the number in the second
@@ -345,10 +351,12 @@ Plots
 Let's define a function that calculates the pressure at a certain
 altitude:
 
+```Matlab
     pressure = @(altitude)1013.25*...
      exp(-0.03417/0.0065*(log(288.15)-...
      (log(288.15-0.0065*altitude))))
      % standard atmosphere pressure (Lide, 1999)
+```
 
 *Note that we can use three dots (`...`) to avoid long lines.*
 
@@ -383,6 +391,7 @@ Try the following plots:
 
 Create a figure and plot several things in it:
 
+```Matlab
     figure % open a new figure
     hold on % do not clear when plotting different things
     plot(x,y,'-b')
@@ -391,6 +400,7 @@ Create a figure and plot several things in it:
     xlabel('Altitude')
     ylabel('Pressure')
     title('My first plot with labels')
+```
 
 Make y axis logarithmic: `set(gca, ’YScale’, ’log’)` (`gca` means "Get
 current axes\") *You can export your plots using the menu **File $>$
@@ -407,6 +417,7 @@ A script is a text file with a list of orders. In your current
 directory, create `radiocarbondating.m`. Open it with the editor and
 write the following orders:
 
+```Matlab
     %% This is a script that calculates radiocarbon ages and errors
     %% By Me, 2019
 
@@ -445,6 +456,7 @@ write the following orders:
     %% Calculate the mean and the average
     age=mean(ages)
     errorage=std(ages)
+```
 
 Now you can change the value of `n` to get the results of other data.
 
@@ -467,10 +479,13 @@ In `radiocarbondating.m`, we can substitute "`n=1`\" by
 "`for n=[1,2,3,4]`\" and write "`end`\" at the end of the script to
 perform the calculations and plotting for the four samples.
 
-*The basic form of a loop in Matlab is:\
-$\-$ `for` Parameter`=`List\
-$\-$ $\-$ $\-$ $\-$ `% My repeating code`\
-$\-$ `end`*
+*The basic form of a loop in Matlab is*:
+
+```Matlab
+for Parameter=List
+% My repeating code
+end
+```
 
 **Error bars**
 
@@ -501,11 +516,14 @@ plot error bars of the individual concentrations:
     xlabel('Sample')
     ylabel('Concentration')
 
-*Another way of creating a loop is using the statement `while`:\
-`n=0;`\
-`while n<10`\
-$\-$ $\-$ $\-$ $\-$ ` n=n+1 % add 1 to the value of n`\
-`end`*
+*Another way of creating a loop is using the statement* `while`:
+
+```Matlab
+n=0;
+while n<10
+n=n+1 % add 1 to the value of n
+end
+```
 
 Conditional statements
 ----------------------
@@ -558,10 +576,7 @@ and write
 
 at the end of the file.
 
-**$^{14}$C age function**
-
-[\[radiocarbon\_function\]]{#radiocarbon_function
-label="radiocarbon_function"}
+**14C age function**
 
 Create a file called **C14agefunction.m** and copy:
 
@@ -639,7 +654,8 @@ under its own weight. *(Wikipedia: Glacier)*
 Consider the following climate simplifications:
 [\[climatedata\]]{#climatedata label="climatedata"}
 
--   Average monthly temperature ($^\circ$C) at sea level in Scotland:
+-   Average monthly temperature (ºC) at sea level in Scotland:
+-   
 ```
       ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
        Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec
@@ -647,33 +663,33 @@ Consider the following climate simplifications:
       ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
       ```
 
--   Temperature lapse rate: 8$^\circ$C/Km
+-   Temperature lapse rate: 8 ºC/Km
 
--   Monthly precipitation (mm) in Scotland:\
+-   Monthly precipitation (mm) in Scotland:
 
 ```
       ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
        Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec
        175   125   150   100   75    100   100   125   125   175   175   175
       ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-      ```
+```
 
  \
 Consider the following snow/ice behaviour (huge simplifications):
 
--   All precipitation is **snow when temperature is below 5$^\circ$C**.
-    All precipitation is rain above 5$^\circ$C.
+-   All precipitation is **snow when temperature is below 5ºC**.
+    All precipitation is rain above 5ºC.
 
--   Daily temperature range is 5$^\circ$C, so **day temperature is
-    2.5$^\circ$C above the average**.
+-   Daily temperature range is 5ºC, so **day temperature is
+    2.5ºC above the average**.
 
 -   Considering thermal conductivity of the snow mantle $\sim$5
-    W/K/m$^2$, a snow latent heat of fusion of  350 kJ/kg and a snow
-    average density of $\sim$0.3 Kg/l, an average of vertical **5 cm of
+    W/K/m2, a snow latent heat of fusion of  350 kJ/kg and a snow
+    average density of ~0.3 Kg/l, an average of vertical **5 cm of
     snow per month will be melted for each degree of day temperature
-    over 0$^\circ$C**.
+    over 0ºC**.
 
--   If the snow survives for more than a year (annual mass balance $>$
+-   If the snow survives for more than a year (annual mass balance >
     0), the snow will flow downhill at an **horizontal speed of 10
     inches/day**.
 
@@ -692,13 +708,13 @@ Mass balance:
 3.  Write a piece of code that calculates the annual mass balance.
     Introduce the possibility of emulate past and future climate
     conditions by changing the temperature and precipitation uniformly
-    ($\Delta$T and $\Delta$P).
+    (ΔT and ΔP).
 
 *The output of the monthly functions should be an array of 12 numbers
 when the input is one altitude, or a matrix when the input is a "column"
 of altitude values.*
 
- \
+ 
 Snow accumulation:
 
 1.  Placing a ski resort: what is the lowest altitude with 3 or more
@@ -708,13 +724,14 @@ Snow accumulation:
     today? *Note: the highest peak in Scotland is Ben Nevis, 1345 m
     above sea level.*
 
- \
+ 
 The Glenshee ski area is located between 650 and 1050 m of altitude.
 What impact would these scenarios have on the business by 2100?
 
-![earthobservatory.nasa.gov](ipcc_scenarios.png){width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131722504-35d9efe1-d93d-4188-a911-96baa2ba7bb7.png)
+earthobservatory.nasa.gov
 
- \
+ 
 Glacier modeling exercises:
 
 1.  Write a piece of code that emulate the annual snow/ice mass flow.
@@ -726,10 +743,10 @@ Glacier modeling exercises:
     the snow/ice is stable.
 
 3.  According to this model, where should the glacial fronts have been
-    during the Younger Dryas ($\Delta$T=-4$^\circ$C)? and during last
-    glaciation ($\Delta$T=-6$^\circ$C)?
+    during the Younger Dryas (ΔT=-4ºC)? and during last
+    glaciation (ΔT=-6ºC)?
 
- \
+ 
 Produce graphical outputs like these:
 
 ![image](https://user-images.githubusercontent.com/53089531/131700264-5be0f18b-b250-4839-9b70-72c4f8cb038d.png)
