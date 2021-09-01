@@ -160,11 +160,13 @@ $^{10}$Be decay constant ($\lambda$), the density of the sediment
 ($\rho$), the depth ($z$), the erosion rate of the surface ($\epsilon$)
 and the age of the landform ($t$):
 
+```
 $$\label{Lal-equation}
 \begin{array}{c}
 {C} = {C_{0}} + \frac{{{P_{sp.}}}}{{\frac{\varepsilon }{{{\Lambda _{sp.}}}} + \lambda }}{{\rm{e}}^{ - \frac{z\cdot\rho}{{{\Lambda _{sp.}}}}}}\left( {1 - {{\rm{e}}^{ - t\left( {\lambda  + \frac{\varepsilon }{{{\Lambda _{sp.}}}}} \right)}}} \right) +  \\ 
 \frac{{{P_{\mu^-}}}}{{\frac{\varepsilon }{{{\Lambda _{\mu^-}}}} + \lambda }}{{\rm{e}}^{ - \frac{z\cdot\rho}{{{\Lambda _{\mu^-}}}}}}\left( {1 - {{\rm{e}}^{ - t\left( {\lambda  + \frac{\varepsilon }{{{\Lambda _{\mu^-}}}}} \right)}}} \right) + \frac{{{P_{f\mu}}}}{{\frac{\varepsilon }{{{\Lambda _{f\mu}}}} + \lambda }}{{\rm{e}}^{ - \frac{z\cdot\rho}{{{\Lambda _{f\mu}}}}}}\left( {1 - {{\rm{e}}^{ - t\left( {\lambda  + \frac{\varepsilon }{{{\Lambda _{f\mu}}}}} \right)}}} \right)
 \end{array}$$
+```
 
 This equation cannot be solved for $t$. Also, when we have a dataset of
 $^{10}$Be concentrations under a surface (a $^{10}$Be depth-profile), we
