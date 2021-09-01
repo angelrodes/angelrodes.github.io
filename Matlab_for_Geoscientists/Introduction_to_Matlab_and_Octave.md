@@ -632,8 +632,7 @@ Exercises
 A glacier is a persistent body of dense ice that is constantly moving
 under its own weight. *(Wikipedia: Glacier)*
 
-![image](equilibrium_line_altitude.png){width="50%"}
-
+![image](https://user-images.githubusercontent.com/53089531/131700109-e77c5c4e-f22e-4880-ab5d-193f2acc4fd2.png)
 (*http://www.antarcticglaciers.org*)
 
  \
@@ -733,5 +732,4 @@ Glacier modeling exercises:
  \
 Produce graphical outputs like these:
 
-![image](glaciers1.pdf){width="100%"} [\[glaciers1\]]{#glaciers1
-label="glaciers1"}
+![image](https://user-images.githubusercontent.com/53089531/131700264-5be0f18b-b250-4839-9b70-72c4f8cb038d.png)
