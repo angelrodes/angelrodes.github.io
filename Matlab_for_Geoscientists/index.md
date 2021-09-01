@@ -1,3 +1,6 @@
+**I am still tranlating these chapters from LaTex.**\
+**Most figures, formulas, and some tables do not show correctly!**
+
 Matlab for Geoscientists v.2019
 
 1. [Introduction](https://angelrodes.github.io/Matlab_for_Geoscientists/1_Introduction_to_Matlab_and_Octave)
