@@ -107,14 +107,14 @@ Note that:
 
 -   We are ignoring the uncertainty of the calibration curve
     (`imported{3}`). To know how to incorporate all the errors, check
-    the script "MatCal" by Lougheed & Obrochta (2016):\
+    the script "MatCal" by Lougheed & Obrochta (2016):
     http://dx.doi.org/10.5334/jors.130
 
 -   To represent several subplots in the same window we are using
     `subplot(r,c,[a b])`, where `r` and `c` are the number of rows and
     columns, and `a` and `b` are corners of the area where we want to
     plot. E.g. `subplot(3,4,[7 12])` would start plotting in the blue
-    area:\
+    area:
     ![image](subplots.png){width="20%"}
 
 Inverse problem
@@ -153,27 +153,26 @@ Cosmogenic depth-profile dating
 **Cosmogenic depth-profile dating**
 
 The accumulation of $^{10}$Be under a sedimentary surface depends on the
-inherited $^{10}$Be concentration ($C_0$), the different $^{10}$Be
-production rates ($P_{sp.}$, $P_{f\mu}$ and $P_{\mu^-}$) and attenuation
-lengths ($\Lambda_{sp.}$, $\Lambda_{f\mu}$ and $\Lambda_{\mu^-}$), the
-$^{10}$Be decay constant ($\lambda$), the density of the sediment
-($\rho$), the depth ($z$), the erosion rate of the surface ($\epsilon$)
-and the age of the landform ($t$):
+inherited 10Be concentration (C0), the different 10Be
+production rates (Psp, Pfμ and Psμ) and attenuation
+lengths (Λsp, Λfμ andΛsμ), the
+10Be decay constant (λ), the density of the sediment
+(ρ), the depth (z), the erosion rate of the surface (ε)
+and the age of the landform (t):
 
 ```
-$$\label{Lal-equation}
-\begin{array}{c}
-{C} = {C_{0}} + \frac{{{P_{sp.}}}}{{\frac{\varepsilon }{{{\Lambda _{sp.}}}} + \lambda }}{{\rm{e}}^{ - \frac{z\cdot\rho}{{{\Lambda _{sp.}}}}}}\left( {1 - {{\rm{e}}^{ - t\left( {\lambda  + \frac{\varepsilon }{{{\Lambda _{sp.}}}}} \right)}}} \right) +  \\ 
-\frac{{{P_{\mu^-}}}}{{\frac{\varepsilon }{{{\Lambda _{\mu^-}}}} + \lambda }}{{\rm{e}}^{ - \frac{z\cdot\rho}{{{\Lambda _{\mu^-}}}}}}\left( {1 - {{\rm{e}}^{ - t\left( {\lambda  + \frac{\varepsilon }{{{\Lambda _{\mu^-}}}}} \right)}}} \right) + \frac{{{P_{f\mu}}}}{{\frac{\varepsilon }{{{\Lambda _{f\mu}}}} + \lambda }}{{\rm{e}}^{ - \frac{z\cdot\rho}{{{\Lambda _{f\mu}}}}}}\left( {1 - {{\rm{e}}^{ - t\left( {\lambda  + \frac{\varepsilon }{{{\Lambda _{f\mu}}}}} \right)}}} \right)
-\end{array}$$
+C=C0+
+  Psp./(λ+ε.*ρ./Λsp).*exp(-z.*ρ./Λsp).*(1-exp(-(λ+ε.*ρ./Λsp).*t))+
+  Pfμ./(λ+ε.*ρ./Λfμ).*exp(-z.*ρ./Λfμ).*(1-exp(-(λ+ε.*ρ./Λfμ).*t))+
+  Psμ./(λ+ε.*ρ./Λsμ).*exp(-z.*ρ./Λsμ).*(1-exp(-(λ+ε.*ρ./Λsμ).*t))
 ```
 
-This equation cannot be solved for $t$. Also, when we have a dataset of
-$^{10}$Be concentrations under a surface (a $^{10}$Be depth-profile), we
-want to solve the problem for $C_0$, $\epsilon$ and $t$. *How can we do
+This equation cannot be solved for t. Also, when we have a dataset of
+10Be concentrations under a surface (a 10Be depth-profile), we
+want to solve the problem for C0, ε andt. *How can we do
 this?*
 
-**$^{10}$Be accumulation model**
+**10Be accumulation model**
 
 The following function calculates theoretical $^{10}$Be concentrations:
 
@@ -187,12 +186,13 @@ The following function calculates theoretical $^{10}$Be concentrations:
         (1-exp(-(l+erosion.*density./L(3)).*t));
     end
 
-**$^{10}$Be data**
+**10Be data**
 
 The following code defines all the known parameters and the $^{10}$Be
 concentrations from the sampled depth-profile for an alluvial fan in
 Almería (Spain):
 
+```Matlab
     %% Production rates
     P=[4.35,0.0985,0.0855]; % production rates in at/g/a
     L=[160,1137,1842]; % attenauation lengths in g/cm^2
@@ -203,18 +203,20 @@ Almería (Spain):
     z=[267,195,141,95,46,3]; % depth of the sameples in cm
     Be10=[91000,184000,265000,430000,732000,1070000]; % 10Be concentrations in atoms/g
     Be10error=[9100,16000,18000,29000,61000,81000]; % 10Be uncertainties in atoms/g
+```
 
- \
 Try `exposure_model(P,L,l,density,10,0,0.0001,10000)` to calculate the
-$^{10}$Be concentration accumulated in a sample 10 cm below a 10 ka old
+10Be concentration accumulated in a sample 10 cm below a 10 ka old
 surface being eroded at a rate of 1 mm/ka (0.0001 cm/a).
 
 We can reproduce the theoretical depth profile for these conditions
 along the first 3 m under the surface:
 
+```Matlab
     zref=0:300; % depth reference in cm
     concentrations=exposure_model(P,L,l,density,zref,0,0.0001,10000);
     plot(concentrations,-zref,'-b')
+```
 
 Now we just need to find which theoretical values of inheritance, age
 and erosion rates (the last 3 parameters in the `exposure_model`
