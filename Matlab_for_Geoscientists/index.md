@@ -1,4 +1,4 @@
-**I am still tranlating these chapters from LaTex.**\
+**I am still migrating these chapters from LaTex.**\
 **Most figures, formulas, and some tables do not show correctly!**
 
 Matlab for Geoscientists v.2019
