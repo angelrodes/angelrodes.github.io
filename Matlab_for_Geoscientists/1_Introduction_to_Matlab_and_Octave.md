@@ -8,11 +8,11 @@ Installation
 
 Install MATLAB following the instructions from the IT services
 
-https://www.gla.ac.uk/myglasgow/it/software/statistics/\#/matlab
+[https://www.gla.ac.uk/myglasgow/it/software/statistics/\#/matlab](https://www.gla.ac.uk/myglasgow/it/software/statistics/\#/matlab)
 
 or install GNU Octave from the Web
 
-https://www.gnu.org/software/octave/
+[https://www.gnu.org/software/octave/](https://www.gnu.org/software/octave/)
 
 Matrix-oriented programming
 ---------------------------
