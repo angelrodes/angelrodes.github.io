@@ -650,14 +650,14 @@ A glacier is a persistent body of dense ice that is constantly moving
 under its own weight. *(Wikipedia: Glacier)*
 
 ![image](https://user-images.githubusercontent.com/53089531/131700109-e77c5c4e-f22e-4880-ab5d-193f2acc4fd2.png)
-(*http://www.antarcticglaciers.org*)
 
- \
+[antarcticglaciers.org](http://www.antarcticglaciers.org)
+
+ 
 Consider the following climate simplifications:
-[\[climatedata\]]{#climatedata label="climatedata"}
 
 -   Average monthly temperature (ºC) at sea level in Scotland:
--   
+ 
 ```
       ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
        Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec
@@ -676,16 +676,15 @@ Consider the following climate simplifications:
       ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 ```
 
- \
+ 
 Consider the following snow/ice behaviour (huge simplifications):
 
 -   All precipitation is **snow when temperature is below 5ºC**.
-    All precipitation is rain above 5ºC.
+-   All precipitation is rain above 5ºC.
 
--   Daily temperature range is 5ºC, so **day temperature is
-    2.5ºC above the average**.
+-   Daily temperature range is 5ºC, so **day temperature is 2.5ºC above the average**.
 
--   Considering thermal conductivity of the snow mantle $\sim$5
+-   Considering thermal conductivity of the snow mantle ~5
     W/K/m2, a snow latent heat of fusion of  350 kJ/kg and a snow
     average density of ~0.3 Kg/l, an average of vertical **5 cm of
     snow per month will be melted for each degree of day temperature
@@ -695,7 +694,7 @@ Consider the following snow/ice behaviour (huge simplifications):
     0), the snow will flow downhill at an **horizontal speed of 10
     inches/day**.
 
--   The average **glacier slope is 15$^\circ$**.
+-   The average **glacier slope is 15º**.
 
 Mass balance:
 
@@ -731,6 +730,7 @@ The Glenshee ski area is located between 650 and 1050 m of altitude.
 What impact would these scenarios have on the business by 2100?
 
 ![image](https://user-images.githubusercontent.com/53089531/131722504-35d9efe1-d93d-4188-a911-96baa2ba7bb7.png)
+
 earthobservatory.nasa.gov
 
  
