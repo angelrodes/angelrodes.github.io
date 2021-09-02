@@ -663,7 +663,7 @@ Consider the following climate simplifications:
        Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec
         4     5     7     8    12    14    16    16    13    10     7     5
       ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-      ```
+```
 
 -   Temperature lapse rate: 8 ºC/Km
 
