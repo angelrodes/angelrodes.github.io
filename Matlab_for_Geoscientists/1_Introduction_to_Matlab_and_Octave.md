@@ -115,12 +115,12 @@ top of the screen is the folder you want to work in. You can see,
 create, delete or open your files using your system browser (explorer,
 finder, nautilus, etc.) or the browser integrated in Matlab or Octave.
 
-*Create a new file called **my-first-file.m**.
+*Create a new file called* **my-first-file.m**.
 
 Avoid using spaces, most symbols, or start with numbers when naming your
-files. **Instead of spaces, use the underscore symbol (\_).**
+files. **Instead of spaces, use the underscore symbol (_).**
 
-Also, note that Matlab files always end with `.m`*
+*Also, note that Matlab files always end with* `.m`
 
 **The editor**
 
@@ -144,8 +144,9 @@ window, or selecting **run** in the menu.
 This is the *memory* of Matlab/Octave. The last answer given in the
 command window is usually stored as `ans`.
 
-*Write `x=3+2` in the command window.\
-The parameter `x` will appear in the Workspace.*
+*Write `x=3+2` in the command window.*
+
+*The parameter `x` will appear in the Workspace.*
 
 Use the command `who` or `whos` to display a summary of the workspace in
 the command window, and the command `clear` to remove all the parameters
@@ -246,7 +247,7 @@ string manipulation can be very frustrating at the beginning. Therefore,
 we will restrict the use of text to sample names or simple labels.
 
 *Sometimes it will be useful to find a sample in a list. For example,
-use `strcmp` to find the position of the student named *Trish*:
+use `strcmp` to find the position of the student named Trish*:
 `strcmp(’Trish’,students)`*
 
 **Small functions**
@@ -309,12 +310,12 @@ With numbers: `mass*avogadro`
 
 With arrays and matrices: `odds+pairs` but `odds.*pairs`
 
-*Note the difference between `B/A` and `B./A`:
+Note the difference between `B/A` and `B./A`:
 
 "`.*`", "`./`" and "`.^`" are operators used to perform calculations
 element by element (array operations). Avoid using "`*`", "`/`" and
 "`^`" on matrices unless you really want to do matrix operations
-following the rules of linear algebra.*
+following the rules of linear algebra.
 
 Call parts of another variable: You can access the number in the second
 row and third column with `A(2,3)`, the second row with `B(2,:)` or the
@@ -403,7 +404,7 @@ Create a figure and plot several things in it:
 ```
 
 Make y axis logarithmic: `set(gca, ’YScale’, ’log’)` (`gca` means "Get
-current axes\") *You can export your plots using the menu **File $>$
+current axes") *You can export your plots using the menu **File $>$
 Save As** in the figure window. Exporting your plots as .eps or .pdf
 will allow you to edit them with vector graphic editors like Adobe
 Illustrator or Inkscape.*
@@ -425,7 +426,7 @@ write the following orders:
     clear % this removes any previous parameter in the workspace
     clc % this clears the command window
 
-    %% Define the formula that calculates the age from concentrations
+    %% Define the formula that calculates the age from concentrations    
     C14age=@(modernconcentration,measuredconcentration)-...
     8033*log(measuredconcentration./modernconcentration);
 
@@ -461,8 +462,9 @@ write the following orders:
 Now you can change the value of `n` to get the results of other data.
 
 *Note that we can make composed strings using brackets `[]` and the
-function `num2str(n)` to convert numbers into strings.\
-Also note that we can use `...` to avoid very long lines.*
+function `num2str(n)` to convert numbers into strings.*
+
+*Also note that we can use `...` to avoid very long lines.*
 
 Loops
 -----
