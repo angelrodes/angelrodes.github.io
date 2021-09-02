@@ -124,7 +124,7 @@ our data. Fortunately, there is a direct solution to solve this problem.
 The general formulas to fit a line y=a*x+b to n data by
 least-squares are:
 
-![image](https://latex.codecogs.com/gif.latex?\bg_black%20a=%20\frac%20{n%20\cdot%20(\sum x_{i}y_{i})%20-%20(\sum x_{i})%20\cdot%20(\sum y_{i})}%20{n%20\cdot%20(\sum x_{i}^{2})%20-%20(\sum x_{i})^2})
+![image](https://latex.codecogs.com/gif.latex?\bg_black%20a=%20\frac%20{n%20\cdot%20(\sum%20x_{i}y_{i})%20-%20(\sum%20x_{i})%20\cdot%20(\sum%20y_{i})}%20{n%20\cdot%20(\sum%20x_{i}^{2})%20-%20(\sum%20x_{i})^2})
 
  
 
@@ -170,7 +170,7 @@ would not be difficult to calculte the inverse function mathematically:
 ![image](https://latex.codecogs.com/gif.latex?\bg_black%20y=a%20\cdot%20x%20+%20b%20\Rightarrow%20x=(y-b)/a)
 
 However, we often need to fill the gaps from *incomplete* datasets. For
-example, the file `gistemp.csv` contains an estimate of global surface
+example, the file `gistemp.csv` ([here](https://github.com/angelrodes/Matlab_for_Geoscientists/blob/main/files_and_scripts/gistemp.csv?raw=true)) contains an estimate of global surface
 temperature change every 5 years ([GISTEMP data](http://data.giss.nasa.gov/gistemp/)).
 
 
@@ -260,9 +260,7 @@ working with datasets involving several standards, we can define the BEC
 graphically as the negative of the x-intercept of our calibration line.
 
 
-![Graphical calculation of the Blank Equivalent Concentration (BEC)
-according to the calibration represented by the red
-line.[]{label="bec"}](bec.pdf){#bec width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131835020-dd2ee135-84a2-49cc-ab9d-5200d1dee050.png)
 
 Graphical calculation of the Blank Equivalent Concentration (BEC)
 according to the calibration represented by the red
@@ -276,21 +274,13 @@ low BEC value implies that our measurements are going to be more
 precise. However, the precision of the measurements will depend on the
 **stability** of the background rather than the background value.
 
- 
-
-
-![Two blank measurements compared. The measurements of the analyte \#1
-in the blank show a lower background, but the background of the analyte
-\#2 measurements is more
-precise.[]{label="backgrounds"}](backgrounds.pdf){#backgrounds
-width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131835088-3a686356-e555-4fd2-8221-b5463188963d.png)
 
 Two blank measurements compared. The measurements of the analyte #1
 in the blank show a lower background, but the background of the analyte
 #2 measurements is more
 precise.
 
- 
 
 The stability of the background is what defines the precision of our
 measurements, rather then the background value. Similarly, we should
@@ -306,10 +296,7 @@ uncertainty of our calibration.
 the calibration data.* Tip: you can use maths to get the inverse
 of `myfit` or use `interp1`.
 
-
-![Graphical calculation of the Blank Equivalent Concentration (BEC) and
-its uncertainty $\sigma_{BEC}$.[]{label="bec2"}](bec2.pdf){#bec2
-width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131835140-39c9705e-ca32-4f87-b5b6-441460eb2ea6.png)
 
 Graphical calculation of the Blank Equivalent Concentration (BEC) and
 its uncertainty σBEC.
@@ -482,11 +469,7 @@ Including the graphical representation of the unknown data, the script
 
 And the generated figure will be similar to this:
 
-![Example of figure output of a calibration. Blanks and standards are
-depicted in blue, unknowns in black and the calibration line within
-uncertainty in
-red.[]{label="calibrationfig"}](calibrationfig.pdf){#calibrationfig
-width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131835221-de4154f8-9b4b-4a83-a89e-0b58d74c64dd.png)
 
 Example of figure output of a calibration. Blanks and standards are
 depicted in blue, unknowns in black and the calibration line within
@@ -516,11 +499,7 @@ An example of a full propagation of uncertainties is shown in
 
  
 
-
-![Another example of calibration. Here, the scatter and the
-uncertainties of the standards are fully
-propagated.[]{label="calibrationfig2"}](calibration2.pdf){#calibrationfig2
-width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131835268-5debb0a3-6621-4985-9815-8aa39e4787df.png)
 
 Another example of calibration. Here, the scatter and the
 uncertainties of the standards are fully
@@ -608,12 +587,9 @@ standards in ppm.
 Write a script that reduces the ICP-OES data and report calibrated
 concentrations for each analyte.
 
-![ICP-OES at
-SUERC.[]{label="ICPOESmachine"}](ICPOESmachine.jpg){#ICPOESmachine
-width="70%"}
+![image](https://user-images.githubusercontent.com/53089531/131835399-c5d844c8-19f6-4d96-8a7c-5ee24978d3d9.png)
 
-ICP-OES at
-SUERC.
+ICP-OES at SUERC.
 
 **Tips**
 
