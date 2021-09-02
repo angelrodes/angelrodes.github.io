@@ -6,6 +6,6 @@
 -->
 # Index
 
-Eventually, course materials will populate this page.
+Eventually, this will be populated with course materials.
 
 [About me](https://angelrodes.github.io/aboutme)
