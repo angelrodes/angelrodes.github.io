@@ -73,9 +73,11 @@ least, the following elements:
 -   Editor
 
 ![image](https://user-images.githubusercontent.com/53089531/131697223-d3c2c5a2-9d82-4615-aa81-8b651960de51.png)
+
 MATLAB interface.
 
 ![image](https://user-images.githubusercontent.com/53089531/131697391-891bde25-1e05-429f-9ff7-d25f78631ba8.png)
+
 Octave GUI.
 
 **The command window** This is the **brain** of the program. You can use
