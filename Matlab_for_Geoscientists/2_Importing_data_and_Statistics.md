@@ -21,7 +21,7 @@ manipulation programs, as Microsoft Excel, are able to import and export
 CSV files. Each line in a CSV file corresponds to a row in a
 spreadsheet. Values from different columns are separated by commas.
 
-file:///home/angel/Dropbox/curso_Matlab_Octave/latex/csvfile.png![image](https://user-images.githubusercontent.com/53089531/131827040-76767a47-a523-4951-85ee-eeeced24de81.png)
+![image](https://user-images.githubusercontent.com/53089531/131827040-76767a47-a523-4951-85ee-eeeced24de81.png)
 You can download this file [here](https://github.com/angelrodes/Matlab_for_Geoscientists/blob/main/files_and_scripts/munros_lon_lat_feet.csv?raw=true) (right click > Save Link As...)
 
 `csvread(filename, row, col)` reads data from the comma-separated value
