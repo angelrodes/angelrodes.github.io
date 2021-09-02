@@ -30,7 +30,7 @@ column arguments are zero based, so that row=0 and col=0 specify the
 first value in the file.
 
 Note that only numeric data can be read using `csvread`. For example,
-the file `munros_lon_lat_feet.csv` contains text and data:
+the file `munros_lon_lat_feet.csv` ([here](https://github.com/angelrodes/Matlab_for_Geoscientists/blob/main/files_and_scripts/munros_lon_lat_feet.csv?raw=true)) contains text and data:
 
 ```
   -------------- ----------- ----------- ------
@@ -109,7 +109,7 @@ distributions**. This means that the true value of whatever we
 are measuring could be equally higher or lower that the measured central
 value (the data) and its probability is:
 
-![image](https://latex.codecogs.com/gif.latex?P=\frac{1}{\sqrt{2\pi\sigma^2}}%20\cdot%20e^{-\frac{(x-\mu)^2}{2\sigma^2}})
+![image](https://latex.codecogs.com/png.latex?P=\frac{1}{\sqrt{2\pi\sigma^2}}%20\cdot%20e^{-\frac{(x-\mu)^2}{2\sigma^2}})
 
 where x are the possible values, μ is the central value (the
 mean), and σ is the uncertainty (the standard deviation).
