@@ -73,4 +73,6 @@ if check
 end
 ```
 
+<!--
 ![image](https://angelrodes.files.wordpress.com/2021/09/yo-china_pixelado.gif)
+-->
