@@ -109,7 +109,7 @@ distributions**. This means that the true value of whatever we
 are measuring could be equally higher or lower that the measured central
 value (the data) and its probability is:
 
-![image](https://latex.codecogs.com/gif.latex?\bg_white%20P=\frac{1}{\sqrt{2\pi\sigma^2}}%20\cdot%20e^{-\frac{(x-\mu)^2}{2\sigma^2}})
+![image](https://latex.codecogs.com/gif.latex?\bg_black%20P=\frac{1}{\sqrt{2\pi\sigma^2}}%20\cdot%20e^{-\frac{(x-\mu)^2}{2\sigma^2}})
 
 where x are the possible values, μ is the central value (the
 mean), and σ is the uncertainty (the standard deviation).
@@ -318,7 +318,7 @@ If we can assume these conditions, the error propagation should be
 performed by considering the partial derivatives of the result respect
 the operators:
 
-![image](https://latex.codecogs.com/gif.latex?\bg_white%20\sigma_{f(a,b)}%20=%20\sqrt{\left(%20\sigma_a%20\frac{\delta%20f(a,b)}{\delta%20a}\right)%20^2+\left(%20\sigma_b%20\frac{\delta%20f(a,b)}{\delta%20b}\right)%20^2})
+![image](https://latex.codecogs.com/gif.latex?\bg_black%20\sigma_{f(a,b)}%20=%20\sqrt{\left(%20\sigma_a%20\frac{\delta%20f(a,b)}{\delta%20a}\right)%20^2+\left(%20\sigma_b%20\frac{\delta%20f(a,b)}{\delta%20b}\right)%20^2})
 
 where a±σa and b±σb are the operators within a
 standard deviation (one sigma) uncertainties. 
@@ -353,9 +353,9 @@ Other approaches commonly used to identify outliers are based on the
 goodness of fit. A simple way of measuring how close are our
 measurements to our mean is the Χ² value:
 
-![image](https://latex.codecogs.com/gif.latex?\bg_white%20\chi^{2}=\left(\frac{x-\bar{x}}{\sigma}\right)^{2})
+![image](https://latex.codecogs.com/gif.latex?\bg_black%20\chi^{2}=\left(\frac{x-\bar{x}}{\sigma}\right)^{2})
 
-Using ![image](https://latex.codecogs.com/gif.latex?\bg_white%20\sigma=\sqrt{\sigma_{x}^2+\sigma_{\bar{x}}^2}) we can calculate
+Using ![image](https://latex.codecogs.com/gif.latex?\bg_black%20\sigma=\sqrt{\sigma_{x}^2+\sigma_{\bar{x}}^2}) we can calculate
 the individual values of Χ² considering all our uncertainties.
 Values of Χ² greater than 1 indicate that the two values we are
 comparing, the individual data and our average, are different within
