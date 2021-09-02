@@ -1,4 +1,4 @@
-Importing data & Statistics {#importing_data}
+Importing data & Statistics
 ===========================
 
 **Import functions**
@@ -21,8 +21,8 @@ manipulation programs, as Microsoft Excel, are able to import and export
 CSV files. Each line in a CSV file corresponds to a row in a
 spreadsheet. Values from different columns are separated by commas.
 
-![Same .csv file in Excel and in a text
-editor.[]{label="csvfilefig"}](csvfile.png){#csvfilefig width="100%"}
+file:///home/angel/Dropbox/curso_Matlab_Octave/latex/csvfile.png![image](https://user-images.githubusercontent.com/53089531/131827040-76767a47-a523-4951-85ee-eeeced24de81.png)
+You can download this file [here](https://github.com/angelrodes/Matlab_for_Geoscientists/blob/main/files_and_scripts/munros_lon_lat_feet.csv?raw=true) (right click > Save Link As...)
 
 `csvread(filename, row, col)` reads data from the comma-separated value
 formatted file starting at the specified row and column. The row and
@@ -32,20 +32,22 @@ first value in the file.
 Note that only numeric data can be read using `csvread`. For example,
 the file `munros_lon_lat_feet.csv` contains text and data:
 
+```
   -------------- ----------- ----------- ------
   Name,          long,       lat,        feet
   Ben Nevis ,    -5.00352,   56.79697,   4409
   Ben Macdui ,   -3.6691,    57.07042,   4295
   Braeriach ,    -3.72885,   57.07824,   4252
   Cairn Toul ,   -3.71092,   57.05432,   4236
-  \...           \...        \...        \...
+  ...            ...         ...         ...
   -------------- ----------- ----------- ------
+```
 
 So the orders `csvread(’munros_lon_lat_feet.csv’,0,0)` does not work or
 do not import the Munros' names. To import the numerical data from this
 file we should use: `munrodata=csvread(’munros_lon_lat_feet.csv’,1,1)`
 
-Importing data from text files using `fopen` and `textscan` {#munros}
+Importing data from text files using `fopen` and `textscan`
 -----------------------------------------------------------
 
 **`fopen` and `textscan`**
@@ -58,17 +60,21 @@ columns. In this case, the first column contains text (`%s` for
 *string*) and the three next columns contain numbers (`%f` for
 *floating-point number*):
 
+```Matlab
     fid = fopen('munros_lon_lat_feet.csv');
     munrodata = textscan(fid, '%s %f %f %f',...
        'HeaderLines', 1,'Delimiter',',');
     fclose(fid);
+```
 
 Once imported our data, we can organize it in different arrays:
 
+```Matlab
     names=munrodata{1};
     lon=munrodata{2};
     lat=munrodata{3};
     feet=munrodata{4};
+```
 
 Input dialog
 ------------
@@ -79,8 +85,10 @@ We can also input our data copied from a spreadsheet (like Excel) using
 `inputdlg` as a string and then convert it into a matrix using
 `textscan`:
 
+```Matlab
     cstr = inputdlg ('Paste from excel','Input new data');
     mydata=textscan(cstr{1}, '%s %f %f %f');
+```
 
 When using this method to input data remember that:
 
@@ -91,36 +99,38 @@ When using this method to input data remember that:
 
 -   You should only copy rows with data. Avoid copying the headers.
 
-The normal distribution {#gauss}
+The normal distribution
 -----------------------
 
 **Gaussian distribution**
 
 Most analytical data are considered **Gaussian (or normal)
-distributions** (Fig. [2.2](#normal-dist){reference-type="ref"
-reference="normal-dist"}). This means that the true value of whatever we
+distributions**. This means that the true value of whatever we
 are measuring could be equally higher or lower that the measured central
 value (the data) and its probability is:
 
-$P=\frac{1}{\sqrt{2\pi\sigma^2}} \cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}}$
+![image](https://latex.codecogs.com/gif.latex?P=\frac{1}{\sqrt{2\pi\sigma^2}}%20\cdot%20e^{-\frac{(x-\mu)^2}{2\sigma^2}})
 
-where $x$ are the possible values, $\mu$ is the central value (the
-mean), and $\sigma$ is the uncertainty (the standard deviation).\
+where x are the possible values, μ is the central value (the
+mean), and σ is the uncertainty (the standard deviation).
 
-![For the normal distribution, the values less than one standard
+
+![image](https://user-images.githubusercontent.com/53089531/131827714-459b3e5d-3919-46ff-936d-cdb304d3bfe2.png)
+
+For the normal distribution, the values less than one standard
 deviation away from the mean account for 68.27% of the set; while two
 standard deviations from the mean account for 95.45%; and three standard
-deviations account for 99.73%. Author: Dan Kernler.
-https://en.wikipedia.org/wiki/Normal\_distribution[]{label="normal-dist"}](gaussian.png){#normal-dist
-width="100%"}
+deviations account for 99.73%. Author: Dan Kernler, [Wikipedia](https://en.wikipedia.org/wiki/Normal_distribution).
 
 Create a function called **normalprobs.m** that calculates the
-probabilities of an array $x$, given a piece of data as $\mu \pm\sigma$:
+probabilities of an array x, given a piece of data as μ±σ:
 
+```Matlab
     function [P]=normalprobs(x,mu,sigma) 
       % Calculates the probability of x based on a gaussian mu +/- sigma
       P=1/(2*pi*sigma^2)^0.5*exp(-(x-mu).^2./(2*sigma^2));
     end
+```
 
 Then compare the following plots:
 
@@ -144,7 +154,7 @@ our apparent ages due to this natural "noise\". However, in principle we
 don't known how much scatter can we attribute to the differences between
 the nature and our model.
 
- \
+
 As we have seen before, any analytical data has also associated some
 uncertainty related to the precision of our measurements (the error
 bars). This **known** uncertainty should also contribute to the scatter
@@ -156,9 +166,10 @@ many samples, a simple way of checking this is just plotting our ages.
 If we have a large dataset, we can also compare our scatter with our
 individual uncertainties using `std`(ages) and `median`(errors).
 
- \
+
 For example:
 
+```Matlab
     %% Group opf ages from LGM moraines
     ages=[27311,18071,19698,19868,25357,21515,19486,18784,19311,...
           14342,19412,18064,18554,18092,18194,19647,19390,18634,...
@@ -177,6 +188,7 @@ For example:
     %% Calculations
       SCATTER=std(ages)
       ANALYTICAL_UNCERT=median(errors)
+```
 
 Comparing scatter and analytical uncertainties, we can decide which is
 the best way of averaging our data:
@@ -192,7 +204,7 @@ the best way of averaging our data:
     probably overestimating our analytical uncertainties. We should
     check our previous calculations.
 
-Types of "averages\"
+Types of "averages"
 --------------------
 
 **Average of a group of numbers**
@@ -201,12 +213,16 @@ The most used type of average is the mean: `mean(ages)`, which is the
 same as `sum(ages)/length(ages)`. The uncertainty of the mean is the
 standard deviation: `std(ages)`, which is
 
+```Matlab
      sqrt(sum((ages-mean(ages)).^2)/(length(ages)-1))
+```
 
 The Standard Deviation Of the Mean (SDOM) gives us an idea of how the
 mean can change with new measurements:
 
+```Matlab
      std(ages)/sqrt(length(ages))
+```
 
 **The SDOM** is often used as the uncertainty of a large number of
 analytical measurements on the same material, but **it does not reflect
@@ -219,40 +235,48 @@ affected by outliers than the mean, and is often the preferred measure
 of central tendency when the distribution is not symmetrical. As for the
 mean, we can calculate its uncertainty as:
 
+```Matlab
      sqrt(sum((ages-median(ages)).^2)/(length(ages)-1))
+```
 
 For analytical data, the standard deviation of the median is considered
-to be a $\sim25\%$ higher than the SDOM.
+to be a ~25 higher than the SDOM.
 
 **Average of a group of numbers and uncertainties**
 
-[\[averages-with-uncertainties\]]{#averages-with-uncertainties
-label="averages-with-uncertainties"} When our data consist of a group of
+When our data consist of a group of
 probability distributions (e.g. ages and errors), we should take into
 account the errors in the calculation of the average. If our data have
 different errors, the data with bigger errors should *weight* less than
 the more precise data. To take this into account, we can use the
 **weighted mean**:
 
+```Matlab
      WM=sum(ages./errors.^2)/sum(1./errors.^2)
+```
 
- \
+
 The standard deviation of the weighted mean (SDOWM) average can be
 calculated as:
 
+```Matlab
      SDOWM=sqrt(1/sum(1./errors.^2))
+```
 
 However, the SDOWM only reflects the uncertainty from the individual
 errors and not the scatter of the data. A more realistic uncertainty
 could be calculated as:
 
+```Matlab
      sqrt(std(ages)^2+SDOWM^2)
+```
 
- \
+
 An alternative method to calculate the average and uncertainty of a
 group of ages and errors is actually simulating their probability
 distributions:
 
+```Matlab
     simulations=1000;
     % create a matrix to place data
     fakedata=zeros(simulations,length(ages));
@@ -265,6 +289,7 @@ distributions:
     % note that (:) converts a matrix into an array
     UNCERTAINTY=std(fakedata(:))
     hist(fakedata(:),30) % plot the fake data
+```
 
 Error transmission
 ------------------
@@ -288,29 +313,22 @@ efficient to propagate errors mathematically.
     lineal in the area of the uncertainty and therefore the resulting
     distribution is **not asymmetrical**).
 
- \
+ 
 If we can assume these conditions, the error propagation should be
 performed by considering the partial derivatives of the result respect
 the operators:
 
-$\sigma_{f(a,b)} = \sqrt{\left( \sigma_a \frac{\delta f(a,b)}{\delta a}\right) ^2+\left( \sigma_b \frac{\delta f(a,b)}{\delta b}\right) ^2}$
+![image](https://latex.codecogs.com/gif.latex?\sigma_{f(a,b)}%20=%20\sqrt{\left(%20\sigma_a%20\frac{\delta%20f(a,b)}{\delta%20a}\right)%20^2+\left(%20\sigma_b%20\frac{\delta%20f(a,b)}{\delta%20b}\right)%20^2})
 
-where $a \pm \sigma_a$ and $b \pm \sigma_b$ are the operators within a
-standard deviation (one sigma) uncertainties.  \
+where a±σa and b±σb are the operators within a
+standard deviation (one sigma) uncertainties. 
+
 Here are some examples on common operations:
 
-        Operation                 Formula                                                               Uncertainty
-  ---------------------- ------------------------- ----------------------------------------------------------------------------------------------------------------------
-                                                   
-         Addition                  $a+b$                                                       $\sqrt{\sigma_a^2+\sigma_b^2}$
-       Subtraction                 $a-b$                                                       $\sqrt{\sigma_a^2+\sigma_b^2}$
-      Multiplication            $a \cdot b$                             $\sqrt{\left( \sigma_a \cdot b\right) ^2+\left( \sigma_b \cdot a\right) ^2}$
-         Division                  $a/b$                        $\sqrt{\left( \frac{\sigma_a}{b}\right) ^2+\left( \sigma_b \cdot \frac{a}{b^2} \right) ^2}$
-          Power                    $a^b$            $\sqrt{\left( \frac{\sigma_a \cdot a^{b} \cdot b}{a}\right) ^2+\left( \sigma_b \cdot a^b  \cdot  \ln{a} \right) ^2}$
-    Natural logarithm        $a \cdot  \ln(b)$                  $\sqrt{\left( \sigma_a \cdot \ln(b)\right) ^2+\left( \sigma_b \cdot \frac{a}{b} \right) ^2}$
-   Logarithm to base 10   $a \cdot  \log_{10}(b)$    $\sqrt{\left( \sigma_a \cdot \log_{10}(b) \right) ^2+\left( \sigma_b \cdot \frac{a}{b \cdot \ln(10)} \right) ^2}$
+![image](https://user-images.githubusercontent.com/53089531/131828031-ba2270dc-a01e-4eb1-80c9-0857b4260f51.png)
 
-Rejecting outliers {#outliers}
+
+Rejecting outliers
 ------------------
 
 **Rejecting outliers**
@@ -320,28 +338,31 @@ from other observations.
 
 A simple method to identify outliers is using the Tukey's fences based
 on the data quartiles. This method identify outliers at deviations
-outside the range from $Q_1-1.5\cdot(Q_3-Q_1)$ to
-$Q_3+1.5\cdot(Q_3-Q_1)$. We can calculate this limits using the built-in
+outside the range from Q1-1.5*(Q3-Q1) to
+Q3+1.5*(Q3-Q1). We can calculate this limits using the built-in
 function `quantile`:
 
+```Matlab
     Q1=quantile(ages,0.25);
     Q3=quantile(ages,0.75);
     outliers=ages(ages<(Q1-1.5*(Q3-Q1)) | ages>(Q3+1.5*(Q3-Q1)))
+```
 
- \
+
 Other approaches commonly used to identify outliers are based on the
 goodness of fit. A simple way of measuring how close are our
-measurements to our mean is the $\chi^{2}$ value:
+measurements to our mean is the Χ² value:
 
-[\[chisq\]]{#chisq label="chisq"}
-$\chi^{2}=\left( \frac{x-\bar{x}}{\sigma} \right) ^{2}$
+![image](https://latex.codecogs.com/gif.latex?\chi^{2}=\left(\frac{x-\bar{x}}{\sigma}\right)^{2})
 
-Using $\sigma=\sqrt{\sigma_{x}^2+\sigma_{\bar{x}}^2}$ we can calculate
-the individual values of $\chi^{2}$ considering all our uncertainties.
-Values of $\chi^{2}$ greater than 1 indicate that the two values we are
+Using ![image](https://latex.codecogs.com/gif.latex?\sigma=\sqrt{\sigma_{x}^2+\sigma_{\bar{x}}^2}) we can calculate
+the individual values of Χ² considering all our uncertainties.
+Values of Χ² greater than 1 indicate that the two values we are
 comparing, the individual data and our average, are different within
-uncertainties.  \
-*Exercise: Use the $\chi^{2}$ method to identify outliers of the ages
+uncertainties.  
+
+
+*Exercise: Use the Χ² method to identify outliers of the ages
 respect their weighted mean and standard deviation of the weighted
 mean.*
 
@@ -357,19 +378,21 @@ Box plots
 **Box plots**
 
 A common way of representing a dataset is using box plots. The data is
-usually represented along the *y* axis, a box is drawn from $Q_1$ to
-$Q_3$. The box is cut at the median ($=Q_2$) and error bars are drawn
-outside the box between the limits defined in section
-[2.8](#outliers){reference-type="ref" reference="outliers"}
+usually represented along the *y* axis, a box is drawn from Q1 to
+Q3. The box is cut at the median (=Q2) and error bars are drawn
+outside the box between the limits defined in section "outliers".
 
-![In a box-plot, the inter-quartile range (IQR) is defined by the
-distance between the first and third quartile $Q_1$ - $Q_3$, so 50% of
-our data are in the IQR, 25% is over $Q_3$ and the rest 25% is under
-$Q_1$.[]{label="boxplotfig"}](boxplot.pdf){#boxplotfig width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131828578-1d5c246e-9208-4892-a142-b7905c476d86.png)
 
- \
+In a box-plot, the inter-quartile range (IQR) is defined by the
+distance between the first and third quartile Q1 - Q3, so 50% of
+our data are in the IQR, 25% is over Q3 and the rest 25% is under
+Q1.
+
+
 This code produces a box-plot of the given ages:
 
+```Matlab
     %% my data
     ages=[27311,18071,19698,19868,25357,21515,19486,18784,19311,...
           14342,19412,18064,18554,18092,18194,19647,19390,18634,...
@@ -405,15 +428,14 @@ This code produces a box-plot of the given ages:
     ylim([0 max(ages)*1.5])
     ylabel('age')
     box on % draw upper and right lines
-
- \
+```
+ 
 *Exercise: Write a function that draws the box plot at a given x
 position and box width. Make the width of the caps half the width of the
 box. The input should be:* `drawboxplot(data,x,width)`
 
 *Then use the function to compare the altitudes of the eastern and
-western munros from section [2.2](#munros){reference-type="ref"
-reference="munros"}.*
+western munros from previous section.*
 
 *Remember that you can recycle code using copy & paste!*
 
@@ -427,9 +449,11 @@ plotting an histogram (e.g. `hist(ages)`). We can select the number of
 "bars" to plot: `hist(feet,30)`. We can also use the built-in function
 `hist` to generate the counting data and plot it using `plot`:
 
+```Matlab
     figure
     [counts,centers] = hist(feet,20);
     plot(centers,counts,'*-r')
+```
 
 *Exercise: Compare graphically the mean + standard deviation, the box
 plot and the histogram of these data. Which one reflect better the
@@ -442,10 +466,10 @@ Camel-plots
 
 When our data have associated errors (like our `ages` and `errors`), the
 histogram does not represent the relative weight of our individual data.
-The probability distribution of the age $12000\pm1500$ can be depicted
-using the function defined in section [2.4](#gauss){reference-type="ref"
-reference="gauss"}:
+The probability distribution of the age 12000±1500 can be depicted
+using the function defined in previous section:
 
+```Matlab
     % Define the x values to plot
     xref=linspace(0,50000,500);
     % calculate the probability distribution
@@ -454,20 +478,21 @@ reference="gauss"}:
     figure
     hold on
     plot(xref,probs,'-b')
+```
 
 *Exercise: Write a script that sum all the probabilities of the
 previously defined ages for each xref and plot it.* The plot of this sum
-should look similar to the blue line in the next figure.\
+should look similar to the blue line in the next figure.
+
 The generated plot show the density of our data better than the
 histogram. These plots are sometimes called "probability density plots".
 However, these diagrams represent the distribution of our data, that
 highly depends on how we selected the samples. Therefore, they do not
 necessarily represent the probability distribution of the landform age
 and, according to Greg Balco, they should be called "normal kernel
-density estimates."\
-https://cosmognosis.wordpress.com/2011/07/25/what-is-a-camel-diagram-anyway/
+density estimates."
 
-![The plot of the sum of probability distributions from our data is
-often called "Camel-plot"
-(informally).[]{label="camelplotfig"}](camelplot.pdf){#camelplotfig
-width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/131828809-99a8876d-7c4c-4d3a-895f-db1faba5b395.png)
+
+The plot of the sum of probability distributions from our data is
+often called camel plot or [camel diagram](https://cosmognosis.wordpress.com/2011/07/25/what-is-a-camel-diagram-anyway/).
