@@ -104,7 +104,7 @@ Try writing the following commands and hit enter:
 
 *To clean the command window, use the command `clc`.\
 As most of the console interfaces, the command window has memory: try
-using the up arrow key ($\uparrow$).*
+using the up arrow key.*
 
 **Current directory and browser**
 
@@ -336,10 +336,10 @@ first column with `A(:,1)`. MATLAB and Octave always follow the order
     in matrix A
 
 -   `normrnd(11000,2000)` % a random number from a gaussian distribution
-    of 11000$\pm$2000
+    of 11000±2000
 
 -   `normrnd(11000,2000,1,5000)` % a row of 5000 random numbers from a
-    gaussian distribution of 11000$\pm$2000
+    gaussian distribution of 11000±2000
 
 *Try `hist(normrnd(11000,2000,1,5000))` and `hist(rand(1,5000))` to plot
 the histograms corresponding to these random distributions.*
@@ -404,7 +404,7 @@ Create a figure and plot several things in it:
 ```
 
 Make y axis logarithmic: `set(gca, ’YScale’, ’log’)` (`gca` means "Get
-current axes") *You can export your plots using the menu **File $>$
+current axes") *You can export your plots using the menu **File >
 Save As** in the figure window. Exporting your plots as .eps or .pdf
 will allow you to edit them with vector graphic editors like Adobe
 Illustrator or Inkscape.*
