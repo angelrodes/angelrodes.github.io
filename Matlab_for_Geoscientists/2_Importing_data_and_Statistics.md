@@ -109,7 +109,7 @@ distributions**. This means that the true value of whatever we
 are measuring could be equally higher or lower that the measured central
 value (the data) and its probability is:
 
-![image](https://latex.codecogs.com/png.latex?P=\frac{1}{\sqrt{2\pi\sigma^2}}%20\cdot%20e^{-\frac{(x-\mu)^2}{2\sigma^2}})
+![image](https://latex.codecogs.com/gif.latex?\bg_white%20P=\frac{1}{\sqrt{2\pi\sigma^2}}%20\cdot%20e^{-\frac{(x-\mu)^2}{2\sigma^2}})
 
 where x are the possible values, μ is the central value (the
 mean), and σ is the uncertainty (the standard deviation).
