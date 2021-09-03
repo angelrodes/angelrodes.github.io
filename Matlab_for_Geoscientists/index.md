@@ -1,4 +1,4 @@
-## Matlab for Geoscientists <!--v.2019-->
+## Matlab for Geoscientists v1.0<!--v.2019-->
 
 **Chapters**
 
