@@ -19,7 +19,7 @@
 **Cite**
 
 
-Rodes, A. (2021). Matlab for Geoscientists v1.0. *Zenodo*, 354895052. doi:10.5281/ZENODO.4663034 \
+Rodes, A. (2021) Matlab for Geoscientists v1.0. *Zenodo*, 354895052. doi:10.5281/ZENODO.4663034 \
 [![DOI](https://zenodo.org/badge/354895052.svg)](https://zenodo.org/badge/latestdoi/354895052)
 
 <!-- https://doi.org/10.5281/ZENODO.4663034 -->
