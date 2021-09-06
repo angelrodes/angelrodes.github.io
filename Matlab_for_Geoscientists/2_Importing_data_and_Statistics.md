@@ -1,7 +1,7 @@
 Importing data & Statistics
 ===========================
 
-**Import functions**
+### Import functions
 
 We can import our data in many ways. There are lots of built-in
 functions that can be used to input data from different file types and
@@ -13,7 +13,7 @@ the simplest and more universal ways of doing it: using `csvread`,
 Importing .csv files
 --------------------
 
-**.csv files**
+### .csv files
 
 CSV stands for "comma-separated values". CSV files are text files widely
 used to store tabular data in a simple format. All spreadsheet
@@ -50,7 +50,7 @@ file we should use: `munrodata=csvread(’munros_lon_lat_feet.csv’,1,1)`
 Importing data from text files using `fopen` and `textscan`
 -----------------------------------------------------------
 
-**`fopen` and `textscan`**
+### `fopen` and `textscan`
 
 We can import tabulated data, including text strings, from any text
 file. To do so, we need to know how many rows with headers are in the
@@ -79,7 +79,7 @@ Once imported our data, we can organize it in different arrays:
 Input dialog
 ------------
 
-**Dialogs**
+### Dialogs
 
 We can also input our data copied from a spreadsheet (like Excel) using
 `inputdlg` as a string and then convert it into a matrix using
@@ -102,7 +102,7 @@ When using this method to input data remember that:
 The normal distribution
 -----------------------
 
-**Gaussian distribution**
+### Gaussian distribution
 
 Most analytical data are considered **Gaussian (or normal)
 distributions**. This means that the true value of whatever we
@@ -141,7 +141,7 @@ Then compare the following plots:
 Calculating the average
 -----------------------
 
-**Averages**
+### Averages
 
 Geochronologists often produce a set of ages to date one geologic event.
 **Each of these ages are always the result of fitting a model** to the
@@ -207,7 +207,7 @@ the best way of averaging our data:
 Types of "averages"
 --------------------
 
-**Average of a group of numbers**
+### Average of a group of numbers
 
 The most used type of average is the mean: `mean(ages)`, which is the
 same as `sum(ages)/length(ages)`. The uncertainty of the mean is the
@@ -242,7 +242,7 @@ mean, we can calculate its uncertainty as:
 For analytical data, the standard deviation of the median is considered
 to be a ~25 higher than the SDOM.
 
-**Average of a group of numbers and uncertainties**
+### Average of a group of numbers and uncertainties
 
 When our data consist of a group of
 probability distributions (e.g. ages and errors), we should take into
@@ -294,7 +294,7 @@ distributions:
 Error transmission
 ------------------
 
-**Error transmission**
+### Error transmission
 
 Simulating the dispersion of the data by generating "fake data"
 according to gaussian distributions is great trick to operate with
@@ -331,7 +331,7 @@ Here are some examples on common operations:
 Rejecting outliers
 ------------------
 
-**Rejecting outliers**
+### Rejecting outliers
 
 In statistics, an outlier is a data point that differs significantly
 from other observations.
@@ -375,7 +375,7 @@ that outlier**.*
 Box plots
 ---------
 
-**Box plots**
+### Box plots
 
 A common way of representing a dataset is using box plots. The data is
 usually represented along the *y* axis, a box is drawn from Q1 to
@@ -442,7 +442,7 @@ western munros from previous section.*
 Histograms
 ----------
 
-**Histograms**
+### Histograms
 
 Another way of visualizing a the distribution of a large dataset is
 plotting an histogram (e.g. `hist(ages)`). We can select the number of
@@ -462,7 +462,7 @@ variability of our ages?*
 Camel-plots
 -----------
 
-**Camel-plots**
+### Camel-plots
 
 When our data have associated errors (like our `ages` and `errors`), the
 histogram does not represent the relative weight of our individual data.
