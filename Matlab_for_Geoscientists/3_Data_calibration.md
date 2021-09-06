@@ -4,7 +4,7 @@ Data calibration
 What is a calibration?
 ----------------------
 
-**Calibrations**
+### Calibrations
 
 Geochemical analysis often require calibrating a machine. A calibration
 is a method that compares
@@ -35,7 +35,7 @@ standard deviation of the measurements from the same sample.
 Calibration tools
 -----------------
 
-**Plotting data with x and y errors**
+### Plotting data with x and y errors
 
 
 The first thing we should do to start calibrating any data is compare it
@@ -246,7 +246,7 @@ surface temperature change during the next century.*
 Spectrometry data
 -----------------
 
-**Blank Equivalent Concentration**
+### Blank Equivalent Concentration
 
 In spectrometry,the Blank Equivalent Concentration (BEC) is defined as
 the concentration that would correspond to the signal of the blank. It
@@ -301,7 +301,7 @@ of `myfit` or use `interp1`.
 Graphical calculation of the Blank Equivalent Concentration (BEC) and
 its uncertainty σBEC.
 
-**Limits of detection and quantification**
+### Limits of detection and quantification
 
 The Limit of Detection (LOD) or Detection Limit is defined as the
 smallest measurable concentration. It is the concentration of a
@@ -522,7 +522,7 @@ the future to calibrate your own data:
     end
 ```
 
-**Reporting data with uncertainties**
+### Reporting data with uncertainties
 
 At the end of our scripts we will probably want to include an easy way
 of exporting the numerical results we obtained, like the concentrations
@@ -577,7 +577,7 @@ digits from our `mu±sigma` data:
 Exercise: ICP-OES data calibration
 ----------------------------------
 
-**ICP-OES data calibration**
+### ICP-OES data calibration
 
 The file `ICPdata_GU20171012.csv` ([here](https://github.com/angelrodes/Matlab_for_Geoscientists/blob/main/files_and_scripts/ICPdata_GU20171012.csv?raw=true)) contains real raw ICP-OES data
 exported from the ICP machine (one line per analyte in chronological
@@ -591,7 +591,7 @@ concentrations for each analyte.
 
 ICP-OES at SUERC.
 
-**Tips**
+### Tips
 
 Some useful functions that you might need:
 
