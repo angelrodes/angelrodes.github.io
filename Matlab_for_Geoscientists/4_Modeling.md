@@ -1,7 +1,7 @@
 Modeling
 ========
 
-**Numerical models**
+### Numerical models
 
 Numerical models are widely used to solve physical or chemical problems
 by describing processes using equations and numbers.
@@ -22,7 +22,7 @@ whether or not we can find or approximate the inverse model.
 Forward problem
 ---------------
 
-**Forward problem**
+### Forward problem
 
 Forward models as y=F(x) are used to make informed predictions.
 However, when we can find the inverse of our model $x=F'(y)$, we can
@@ -36,7 +36,7 @@ Mathematically, a forward problem is a *well-posed problem*, where a
 unique solution exists and the solutions change continuously with the
 known parameters.
 
-**Radiocarbon calibration**
+### Radiocarbon calibration
 
 A good example of a forward problem is the calculation of a calibrated
 C-14 age from an apparent C-14 age, as the C-14 ages
@@ -111,7 +111,7 @@ Note that:
 Inverse problem
 ---------------
 
-**Inverse problem**
+### Inverse problem
 
 Sometimes it is not possible to express our problem as x=F'(y),
 because sometimes it is impossible to get the inverse of F(x).
@@ -123,7 +123,7 @@ problem cannot be solved for t=f(C,C_0,...). In this cases, we will
 need to *guess* the age $t$ corresponding to our known concentrations
 C,C_0, etc.
 
-**Ill-posed problem**
+### Ill-posed problem
 
 Mathematically, this kind of problems are often *ill-posed problems*.
 Therefore, we cannot assume that they have a unique solution and we
@@ -141,7 +141,7 @@ but we should also answer the question:
 Cosmogenic depth-profile dating
 -------------------------------
 
-**Cosmogenic depth-profile dating**
+### Cosmogenic depth-profile dating
 
 The accumulation of Be-10 under a sedimentary surface depends on the
 inherited Be-10 concentration (C0), the different Be-10
@@ -163,7 +163,7 @@ Be-10 concentrations under a surface (a Be-10 depth-profile), we
 want to solve the problem for C0, ε andt. *How can we do
 this?*
 
-**Be-10 accumulation model**
+### Be-10 accumulation model
 
 The following function calculates theoretical Be-10 concentrations:
 
@@ -179,7 +179,7 @@ The following function calculates theoretical Be-10 concentrations:
     end
 ```
 
-**Be-10 data**
+### Be-10 data
 
 The following code defines all the known parameters and the Be-10
 concentrations from the sampled depth-profile for an alluvial fan in
@@ -219,7 +219,7 @@ uncertainties!
 Monte Carlo methods
 -------------------
 
-**Monte Carlo methods**
+### Monte Carlo methods
 
 The simplest way of guessing the values for `C0,erosion,t` that fit our
 data `Be10` at our depths `z` could be just trying *a lot* of random
@@ -315,7 +315,7 @@ models.*
 Convergence methods
 -------------------
 
-**Convergence**
+### Convergence
 
 Another way of getting more models fitting our data is changing the
 limits of the randomized parameters while generating more models. For
@@ -337,7 +337,7 @@ close to our limits.
 Goal-seeking algorithms
 -----------------------
 
-**Goal-seeking algorithms**
+### Goal-seeking algorithms
 
 Until now, we have been solving the question *"Which ages are compatible
 with my data?"*, but are not explicitly answering the question *"Which
@@ -401,7 +401,7 @@ rate.
 Summary
 -------
 
-**Summary**
+### Summary
 
 -   Using convergence (and divergence) algorithms help our inverse
     modeling program to run faster and allow us to set wide starting
@@ -419,7 +419,7 @@ vs.
 
 ![image](https://user-images.githubusercontent.com/53089531/132246576-be95b4f5-7a5e-4605-b904-a95ddf0ed8f8.png)
 
-**Exercise**
+### Exercise
 
 Use previous models to solve the age of a landform with the following
 Be-10 depth profile:
@@ -442,5 +442,4 @@ convergence code. This will allow you to create a code that will work on
 any Be-10 database.
 
 ![image](https://user-images.githubusercontent.com/53089531/132246624-531151d3-6ba0-4d71-a9fc-d87b7233dd19.png)
-
 
