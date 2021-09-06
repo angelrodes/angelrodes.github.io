@@ -4,7 +4,7 @@ Maps
 Install a toolbox or package
 ----------------------------
 
-**Loading the mapping tools**
+### Loading the mapping tools
 
 Most mapping tools are not installed in the basic versions of MATLAB or
 Octave. To install them, we will need to do the following:
@@ -26,7 +26,7 @@ Octave. To install them, we will need to do the following:
     It is also recommended to load the input/output package:
     *`pkg load io`*
 
-**Mapping tools**
+### Mapping tools
 
 The mapping tools allow us to:
 
@@ -48,7 +48,7 @@ in any official toolbox or package.
 Import a toolbox not included in MATLAB
 ---------------------------------------
 
-**TopoToolbox**
+### TopoToolbox
 
 [TopoToolbox](https://doi.org/10.1016/j.envsoft.2009.12.002) is a is a MATLAB program for the analysis of digital
 elevation models (DEMs) developed by Schwanghart & Kuhn (2010) that
@@ -68,7 +68,7 @@ the tools included in MATLAB and Octave.*
 Plotting maps
 -------------
 
-**Plotting maps using the mapping tools**
+### Plotting maps using the mapping tools
 
 -   Calculate the azimuth from SUERC ([lat,lon]=[55.75,-4.16]) and
     George Square ([lat,lon]=[55.86,-4.25]).
@@ -92,7 +92,7 @@ Plotting maps
 Import maps without mapping tools
 ---------------------------------
 
-**Import Esri grid files**
+### Import Esri grid files
 
 `.asc` files are widely used to export Digital Elevation Models. They
 are plain text files (ASCII) containing a matrix of elevations.
@@ -169,7 +169,7 @@ Now you can plot your DEM using any of these plotting tools:
 Geomorphic calculations on DEMs
 -------------------------------
 
-**Calculate slopes**
+### Calculate slopes
 
 We can calculate the slope vectors using the function `gradient`:
 
@@ -225,7 +225,7 @@ In Matlab or Octave:
 
 If we want the slope angles in degrees: `rad2deg(atan(slopes))`
 
-**Calculate flow direction**
+### Calculate flow direction
 
 We can calculate the azimuth of the flow direction with:
 
@@ -271,7 +271,7 @@ We can calculate flow direction following this simple approach:
      end
 ```
 
-**Fill sinks**
+### Fill sinks
 
 If you plot the sinks in the map:
 
@@ -338,7 +338,7 @@ Find an example of sink-filling code in the next slide.
     Z=Zfilled; % replace our map!
 ```
 
-**Flow accumulation**
+### Flow accumulation
 
 The next "map" that is usually calculated on a DEM is the
 flow-accumulation.
@@ -397,7 +397,7 @@ average:
      contour(X,Y,Z,[0.1,200:200:2000],'-k')
 ```
 
-**Catchment related calculations**
+### Catchment related calculations
 
 Once we have calculated the flow-direction and flow-accumulation
 matrices (`FD` and `FA`), we can start calculating parameters that can
@@ -447,7 +447,7 @@ altitude by the flow accumulation.
 Exercise: model glaciations
 ---------------------------
 
-**Scottish glaciers (again)**
+### Scottish glaciers (again)
 
 Using the climate and mass balances defined in the [first chapter](https://angelrodes.github.io/Matlab_for_Geoscientists/1_Introduction_to_Matlab_and_Octave), and assuming average temperatures
 4ºC below current ones and monthly precipitation 100 mm above
