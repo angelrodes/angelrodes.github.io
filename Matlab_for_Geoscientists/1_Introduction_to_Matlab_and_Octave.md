@@ -4,7 +4,7 @@ Introduction to Matlab and Octave
 Installation
 ------------
 
-**Install it!**
+### Install it!
 
 Install MATLAB following the instructions from the IT services
 
@@ -17,7 +17,7 @@ or install GNU Octave from the Web
 Matrix-oriented programming
 ---------------------------
 
-**Matrix-oriented programming**
+### Matrix-oriented programming
 
 -   MATLAB and Octave are presented as "MATrix LABoratories", commonly
     used for plotting of functions and data, implementation of
@@ -35,7 +35,7 @@ Matrix-oriented programming
 Why MATLAB/Octave?
 ------------------
 
-**MATLAB and/or Octave will allow you to:**
+### MATLAB and/or Octave will allow you to:
 
 -   Manage large datasets (raw data, synthetic results, maps, etc.).
 
@@ -57,7 +57,7 @@ Why MATLAB/Octave?
 The interface
 -------------
 
-**The interface**
+### The interface
 
 Matlab and Octave come with very similar interfaces containing, at
 least, the following elements:
@@ -108,7 +108,7 @@ Try writing the following commands and hit enter:
 As most of the console interfaces, the command window has memory: try
 using the up arrow key.*
 
-**Current directory and browser**
+### Current directory and browser
 
 When you want to interact with files (e.g. calling your own scripts or
 creating files with your results or graphs), you need to know **where**
@@ -124,7 +124,7 @@ files. **Instead of spaces, use the underscore symbol (_).**
 
 *Also, note that Matlab files always end with* `.m`
 
-**The editor**
+### The editor
 
 This is just a basic text editor. The files that you can edit do not
 contain any information about formatting. You can open these files using
@@ -141,7 +141,7 @@ disp(’Hello world’)
 then run it using the command `my_first_file` (no `.m`) in the command
 window, or selecting **run** in the menu.
 
-**Workspace**
+### Workspace
 
 This is the *memory* of Matlab/Octave. The last answer given in the
 command window is usually stored as `ans`.
@@ -157,7 +157,7 @@ in the workspace.
 What can we put in the Workspace?
 ---------------------------------
 
-**Parameters with one number**
+### Parameters with one number
 
 -   `mass=12`
 
@@ -183,7 +183,7 @@ Other "special\" accepted values:
 *`Inf` means "Infinite" and `NaN` means "Not a Number". You can also
 generate them by computing `1/0` or `0/0` in the command window.*
 
-**Array of numbers**
+### Array of numbers
 
 -   `data=[254,782,65,5]`
 
@@ -207,7 +207,7 @@ Use `odds13` if you want it as a column.
 Access a single (`data(3)` or `data(end)`) or several values of an array
 (`a(7:10)`)*
 
-**Matrices**
+### Matrices
 
 -   `A=[1,2,3 ; 4,5,6 ; 7,8,9]`
 
@@ -233,7 +233,7 @@ are also able to handle matrices in multiple dimensions. E.g.
 Use `size(B)` to check the size of your matrix (rows and columns), or
 n`numel(B)` to get the number of elements in `B`.
 
-**Strings**
+### Strings
 
 Strings are parameters containing text:
 
@@ -252,7 +252,7 @@ we will restrict the use of text to sample names or simple labels.
 use `strcmp` to find the position of the student named Trish*:
 `strcmp(’Trish’,students)`*
 
-**Small functions**
+### Small functions
 
 Simple formulas can be defined by using defining the parameters with
 @(Parameters):
@@ -265,7 +265,7 @@ Simple formulas can be defined by using defining the parameters with
 
 *Try `temp_fahrenheit(15)` and `decay(C14halflife,20000)`*
 
-**Boolean data**
+### Boolean data
 
 Boolean data is a type of data that has one of two possible values: true
 (1) or false (0). In MATLAB, logical is usually generated used
@@ -306,7 +306,7 @@ This property is useful to easily create filters for our data:
 
 *clc to clean the Command window*
 
-**Basic calculations**
+### Basic calculations
 
 With numbers: `mass*avogadro`
 
@@ -324,7 +324,7 @@ row and third column with `A(2,3)`, the second row with `B(2,:)` or the
 first column with `A(:,1)`. MATLAB and Octave always follow the order
 (**row,column**) in 2D matrices.
 
-**Random numbers**
+### Random numbers
 
 -   `rand` % any number between 0 and 1
 
@@ -349,7 +349,7 @@ the histograms corresponding to these random distributions.*
 Plots
 -----
 
-**Air pressure**
+### Air pressure
 
 Let's define a function that calculates the pressure at a certain
 altitude:
@@ -372,7 +372,7 @@ And alculate their corresponding pressures:
 
 `y=pressure(x)`
 
-**Simple plots**
+### Simple plots
 
 Try the following plots:
 
@@ -390,7 +390,7 @@ Try the following plots:
 
 -   `stairs(x,y)`
 
-**Figure**
+### Figure
 
 Create a figure and plot several things in it:
 
@@ -414,7 +414,7 @@ Illustrator or Inkscape.*
 Scripts
 -------
 
-**Scripts**
+### Scripts
 
 A script is a text file with a list of orders. In your current
 directory, create `radiocarbondating.m`. Open it with the editor and
@@ -471,7 +471,7 @@ function `num2str(n)` to convert numbers into strings.*
 Loops
 -----
 
-**Loops**
+### Loops
 
 We often need to run a block of code several times. For example, in our
 program `radiocarbondating.m` we could copy and paste the script 4 times
@@ -491,7 +491,7 @@ for Parameter=List
 end
 ```
 
-**Error bars**
+### Error bars
 
 Create a new script called **plot-with-error-bars.m** that use a loop to
 plot error bars of the individual concentrations:
@@ -534,7 +534,7 @@ end
 Conditional statements
 ----------------------
 
-**if - end**
+### if - end
 
 Conditional statements allow us to select at run time which block of
 code to execute. The simplest conditional statement is `if`, closed with
@@ -546,7 +546,7 @@ code to execute. The simplest conditional statement is `if`, closed with
       string=[num2str(n) ' is pair']
     end
 
-**if - elseif - else - end**
+### if - elseif - else - end
 
 We can define alternatives using `if`, `elseif`, `else` and `end`:
 
@@ -567,7 +567,7 @@ statement by typing `help switch` in the command window!*
 Functions
 ---------
 
-**Functions**
+### Functions
 
 A function is a script that works like a "black box\". You only see the
 final output in the workspace, not all the parameters defined in the
@@ -582,7 +582,7 @@ and write
 
 at the end of the file.
 
-**14C age function**
+### 14C age function
 
 Create a file called **C14agefunction.m** and copy:
 
@@ -608,7 +608,7 @@ Save the file, and then execute the following in the command window:
 Built-in functions
 ------------------
 
-**Built-in functions**
+### Built-in functions
 
 MATLAB and Octave come with a large number of built-in functions (e.g.
 `factorial`, `sin`, `sum`, `diff`, `max`, `magic`, `pi`, `median`,
@@ -626,7 +626,7 @@ search.
 `edit`. Try `edit magic` to see the code of the function that generates
 magic squares!*
 
-**Toolboxes and packages**
+### Toolboxes and packages
 
 There are some advances functions, like the ones used to work with maps,
 that are not included in the basic package of MATLAB and Octave. These
@@ -648,7 +648,7 @@ package is required, it will be clearly stated.
 Exercises
 ---------
 
-**Snow and glacier modelling**
+### Snow and glacier modelling
 
 A glacier is a persistent body of dense ice that is constantly moving
 under its own weight. *(Wikipedia: Glacier)*
