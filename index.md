@@ -9,8 +9,10 @@
 
 **Chapters**
 
+<!---
 > I am still migrating these chapters from LaTeX.\
 > Most figures, formulas, and some tables do not show correctly!
+-->
 
 1. [Introduction](https://angelrodes.github.io/Matlab_for_Geoscientists/1_Introduction_to_Matlab_and_Octave)
 2. [Importing data & Statistics](https://angelrodes.github.io/Matlab_for_Geoscientists/2_Importing_data_and_Statistics)
