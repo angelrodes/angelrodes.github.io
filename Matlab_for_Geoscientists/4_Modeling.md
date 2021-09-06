@@ -53,7 +53,7 @@ create a script to calibrate the entire probability distribution of the
 age (see [previous session](https://angelrodes.github.io/Matlab_for_Geoscientists/3_Data_calibration)) along the calibration curve using `interp1`
 and produce an output like this:
 
-![image](C14calibration.pdf){width="100%"} (code in the next slides)
+![image](https://user-images.githubusercontent.com/53089531/132246138-38632b57-4c73-48f1-a0da-a4d584951c1c.png)
 
 ```Matlab
     %% import calibration curve
@@ -107,7 +107,9 @@ Note that:
 
 -   To represent several subplots in the same window we are using `subplot(r,c,[a b])`, where `r` and `c` are the number of rows and columns, and `a` and `b` are corners of the area where we want to plot. E.g. `subplot(3,4,[7 12])` would start plotting in the blue area:
 
-    ![image](subplots.png){width="20%"}
+[image](https://user-images.githubusercontent.com/53089531/132246183-67e67a57-ff9d-4553-8c2c-fa9bbdd1761a.png)
+
+
 
 Inverse problem
 ---------------
@@ -230,12 +232,10 @@ closer to our data. This is called a **Monte Carlo experiment**.
  
 
 To perform this Monte Carlo experiment, we should define a way of
-measuring how close is our model to our data. A Χ² function
-(similar to the one at the slide
-[\[chisq\]](#chisq){reference-type="ref" reference="chisq"}) would do
+measuring how close is our model to our data. A Χ² function would do
 the job:
 
-$\chi^{2}=\sum\limits_{sample=1}^n \left( \frac{C_{model}(z_{sample})-C_{sample}}{\sigma_{C_{sample}}} \right) ^{2}$
+![image](https://latex.codecogs.com/gif.latex?\bg_black%20\chi^{2}=\sum\limits_{sample=1}^n%20\left(%20\frac{C_{model}(z_{sample})-C_{sample}}{\sigma_{C_{sample}}} \right)%20^{2})
 
  
 
@@ -325,9 +325,7 @@ the distribution of the parameters values that fit our data. *Try
 increasing the number of random models to get at least 300 fitting
 models.*
 
-![Mote Carlo
-simulations.[]{label="montecarlomodels"}](montecarlomodels.pdf){#montecarlomodels
-width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/132246435-e23380a0-f09d-4477-a307-e44bda0b6b5f.png)
 
 Convergence methods
 -------------------
@@ -365,9 +363,8 @@ are scattered towards old ages. This is because the fitting area in the
 $\epsilon-t$ space is a narrow valley that we can easily miss when
 randomizing the $\epsilon$ and $t$ values.
 
-![Erosion rate-age plot.[]{label="etplot"}](etplot.pdf){#etplot
-width="100%"}
 
+![image](https://user-images.githubusercontent.com/53089531/132246483-6d7bb923-48af-426c-82ed-b825035b8235.png)
  
 
 To avoid this, we can randomize only the $C_0$ and $t$ parameters and
@@ -437,8 +434,14 @@ Summary
     results. Compare the two plots representing the solutions in the
     $\epsilon-t$ space with and without using Χ² minimization:
 
-    ![image](etplot.pdf){width="45%"} vs.
-    ![image](etplotminimize.pdf){width="45%"}
+
+
+
+![image](https://user-images.githubusercontent.com/53089531/132246483-6d7bb923-48af-426c-82ed-b825035b8235.png)
+
+vs.
+
+![image](https://user-images.githubusercontent.com/53089531/132246576-be95b4f5-7a5e-4605-b904-a95ddf0ed8f8.png)
 
 **Exercise**
 
@@ -462,7 +465,6 @@ Start testing ages between 0 and 10 Ma and try introducing some
 convergence code. This will allow you to create a code that will work on
 any Be-10 database.
 
-![Expected result.](exercise_model.pdf){width="100%"}
+![image](https://user-images.githubusercontent.com/53089531/132246624-531151d3-6ba0-4d71-a9fc-d87b7233dd19.png)
 
-[\[exercise\_model\]]{#exercise_model label="exercise_model"}
 
