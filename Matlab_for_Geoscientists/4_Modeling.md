@@ -99,7 +99,6 @@ and produce an output like this:
         xlabel('calibrated C14 age')
         ylabel('P')
 ```
- 
 
 Note that:
 
@@ -107,9 +106,7 @@ Note that:
 
 -   To represent several subplots in the same window we are using `subplot(r,c,[a b])`, where `r` and `c` are the number of rows and columns, and `a` and `b` are corners of the area where we want to plot. E.g. `subplot(3,4,[7 12])` would start plotting in the blue area:
 
-[image](https://user-images.githubusercontent.com/53089531/132246183-67e67a57-ff9d-4553-8c2c-fa9bbdd1761a.png)
-
-
+![image](https://user-images.githubusercontent.com/53089531/132246183-67e67a57-ff9d-4553-8c2c-fa9bbdd1761a.png)
 
 Inverse problem
 ---------------
@@ -229,15 +226,11 @@ data `Be10` at our depths `z` could be just trying *a lot* of random
 values of `C0,erosion,t` and check which theoretical concentrations are
 closer to our data. This is called a **Monte Carlo experiment**.
 
- 
-
 To perform this Monte Carlo experiment, we should define a way of
 measuring how close is our model to our data. A Χ² function would do
 the job:
 
-![image](https://latex.codecogs.com/gif.latex?\bg_black%20\chi^{2}=\sum\limits_{sample=1}^n%20\left(%20\frac{C_{model}(z_{sample})-C_{sample}}{\sigma_{C_{sample}}} \right)%20^{2})
-
- 
+![image](https://latex.codecogs.com/gif.latex?\bg_black%20\chi^{2}=\sum\limits_{sample=1}^n%20\left(%20\frac{C_{model}(z_{sample})-C_{sample}}{\sigma_{C_{sample}}}%20\right)%20^{2})
 
 The following code runs a Monte-Carlo experiment of 100 000 models
 assuming that $\epsilon$ is between 0 and 50 m/Ma (0.005 cm/a), the
@@ -261,8 +254,6 @@ than the lowest concentration.
     end
 ```
 
- 
-
 **Which models should we consider to represent the uncertainty of the
 results?**
 
@@ -277,8 +268,6 @@ When performing this kind of inverse modeling, the models that fit the
 data with a Χ² value below the minimum Χ² value plus the
 degrees of freedom are often considered to fit the data within one sigma
 confidence level.
-
- 
 
 Therefore, we can calculate which of the models fit our data within
 one-sigma, assuming that this is defined by the models with Χ²
@@ -301,8 +290,6 @@ values between the minimum Χ² and Χ²+DOF:
         disp(['Inheritance: ' num2str(min(C0i(onesigma))) ' - '...
             num2str(max(C0i(onesigma))) ' atoms/g'])
 ```
- 
-
 
 -   What is the best result?
 
@@ -317,8 +304,6 @@ values between the minimum Χ² and Χ²+DOF:
 
 -   Select the models fitting the data within one-sigma confidence level
     and plot these models in grey (`’Color’,[0.7 0.7 0.7]`).
-
- 
 
 We should get a high number of fitting models to get an idea of which
 the distribution of the parameters values that fit our data. *Try
@@ -363,9 +348,7 @@ are scattered towards old ages. This is because the fitting area in the
 $\epsilon-t$ space is a narrow valley that we can easily miss when
 randomizing the $\epsilon$ and $t$ values.
 
-
 ![image](https://user-images.githubusercontent.com/53089531/132246483-6d7bb923-48af-426c-82ed-b825035b8235.png)
- 
 
 To avoid this, we can randomize only the $C_0$ and $t$ parameters and
 make our program to seek actively which is the best $\epsilon$ that fit
@@ -381,16 +364,12 @@ of MATLAB and Octave, so we will never be sure that our program is going
 to work the same way in someone else computer. Therefore, it is highly
 recommended to build our own minimization algorithm.
 
- 
-
 An easy solution could be to use `interp1` as a goal seeker of the
 deviations. The piece of code in the next slide includes this goal
 seeker in the modeling loop to force getting always the best erosion
 rate.
 
 *How many models do you need to run now to get 300 fitting resutls?*
-
- 
 
 ```Matlab
     % start testing models
@@ -433,9 +412,6 @@ Summary
     models, and also guarantee the reproducibility and accuracy of our
     results. Compare the two plots representing the solutions in the
     $\epsilon-t$ space with and without using Χ² minimization:
-
-
-
 
 ![image](https://user-images.githubusercontent.com/53089531/132246483-6d7bb923-48af-426c-82ed-b825035b8235.png)
 
