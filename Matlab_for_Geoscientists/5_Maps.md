@@ -10,8 +10,8 @@ Most mapping tools are not installed in the basic versions of MATLAB or
 Octave. To install them, we will need to do the following:
 
 1.  In MATLAB we can install the **Mapping Toolbox** if it is not
-    installed yet. Check if it is installed in the **Home tab $>$
-    Add-Ons $>$ Manage Add-Ons**. If it is not, you gen get it from
+    installed yet. Check if it is installed in the **Home tab >
+    Add-Ons > Manage Add-Ons**. If it is not, you gen get it from
     [here](https://www.mathworks.com/products/mapping.html).
 
 2.  In Octave you need the **mapping package** (check if you already
@@ -114,7 +114,7 @@ all these parameters are in metres. Make sure you know the units before
 using a `.asc` file!
 
 Import the data in `Scotland.asc` using `textread` to transform the
-`.asc` data into $X$, $Y$ and $Z$ coordinates:
+`.asc` data into X, Y and Z coordinates:
 
 ```Matlab
     textdata=textread('Scotland.asc', '%s');
@@ -191,7 +191,7 @@ We can calculate the slope vectors using the function `gradient`:
 Note that:
 
 -   We have to provide the `xspacing` and `yspacing` in metres to get
-    the partial derivatives $\delta z/\delta x$ and $\delta z/\delta y$
+    the partial derivatives Δz/Δx and Δz/Δy
     (`dx` and `dy`) in m/m (unitless). We could calculate the same as
     follows:
 
@@ -201,7 +201,7 @@ Note that:
                      dx=dxunscaled/xspacing; dy=dyunscaled/yspacing;
 ```
 
--   The$x spacing could not constant in large maps when the points are
+-   The x spacing could not constant in large maps when the points are
     spaced at constant geographical longitudes (see
     *`distance(Y(:),X(:),Y(:),X(:)+cellsize)`*). That is why sometimes
     the `cellsize` is in metres. Here, we are approximating the
@@ -214,7 +214,7 @@ Note that:
 Once we have the gradient, we can calculate the slopes:
 
 
-![image](https://latex.codecogs.com/gif.latex?\bg_black%20\nabla%20z%20=%20\sqrt{\left(%20\frac{\delta z}{\delta x}\right)^{2}+\left(%20\frac{\delta z}{\delta y}\right)^{2}})
+![image](https://latex.codecogs.com/gif.latex?\bg_black%20\nabla%20z%20=%20\sqrt{\left(%20\frac{\delta%20z}{\delta%20x}\right)^{2}+\left(%20\frac{\delta%20z}{\delta%20y}\right)^{2}})
 
 
 In Matlab or Octave:
