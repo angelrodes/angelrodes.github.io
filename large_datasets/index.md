@@ -1,6 +1,8 @@
 # Manipulating large datasets in MATLAB/Octave
 
-Online sessions to learn how to create programs that access, sort, manipulate and represent data from large datests stored in complex databases, like the raw AMS database.
+> Draft of the course I will be delivering soon
+
+Online sessions on how to create programs that access, sort, manipulate and represent data from large datests stored in complex databases, like the raw AMS database. 
 
 Ángel Rodés, 2021 \
 [angelrodes.com](https://angelrodes.wordpress.com/)
