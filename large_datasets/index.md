@@ -28,4 +28,7 @@ Online sessions on how to create programs that access, sort, manipulate and repr
 6. Exercises with AMS raw data
     * Represent current stability
     * Change detector gates
-7. Plotting georeferenced data
+
+<!--
+* [Plotting georeferenced data]
+-->
