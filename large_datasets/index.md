@@ -21,4 +21,4 @@ Online sessions to learn how to create programs to access, sort, manipulate and 
     * Listing files
 3. Regular expressions (RegEx)
 4. Reading files
-5. Tutorial: AMS data
+5. Exercise: plotting AMS raw data
