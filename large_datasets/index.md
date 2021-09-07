@@ -23,6 +23,6 @@ Online sessions to learn how to create programs that access, sort, manipulate an
 5. Reading files
     * Lines and columns
     * Sorting
-6. Exercise: plotting AMS raw data
+6. Exercises with AMS raw data
     * Represent current stability
     * Change detector gates
