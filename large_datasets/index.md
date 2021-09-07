@@ -7,7 +7,7 @@ Online sessions to learn how to create programs to access, sort, manipulate and 
 
 ## Sessions
 
-* User input
+1. User input
     * Command line dialogs
         * Yes/No dialogs
         * Ask for data
@@ -15,10 +15,10 @@ Online sessions to learn how to create programs to access, sort, manipulate and 
         * Yes/No dialogs
         * Input data
         * Select files and folders
-* Manipulating files and folders
+2. Manipulating files and folders
     * Paths
     * Moving between paths
     * Listing files
-* Regular expressions (RegEx)
-* Reading files
-* Tutorial: AMS data
+3. Regular expressions (RegEx)
+4. Reading files
+5. Tutorial: AMS data
