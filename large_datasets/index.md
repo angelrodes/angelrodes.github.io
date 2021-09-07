@@ -10,7 +10,7 @@ Online sessions on how to create programs that access, sort, manipulate and repr
 ## Sessions
 
 1. User input
-    * Command line dialogs 
+    * Command-window dialogs 
     * Graphical dialogs 
 2. Manipulating files and folders
     * Paths
@@ -28,3 +28,4 @@ Online sessions on how to create programs that access, sort, manipulate and repr
 6. Exercises with AMS raw data
     * Represent current stability
     * Change detector gates
+7. Plotting georeferenced data
