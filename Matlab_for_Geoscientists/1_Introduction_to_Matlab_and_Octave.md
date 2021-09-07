@@ -653,7 +653,7 @@ Exercises
 A glacier is a persistent body of dense ice that is constantly moving
 under its own weight. *(Wikipedia: Glacier)*
 
-![image](https://user-images.githubusercontent.com/53089531/131700109-e77c5c4e-f22e-4880-ab5d-193f2acc4fd2.png)
+![image](https://user-images.githubusercontent.com/53089531/132316982-3404632a-455e-4be4-a7e3-c80467a09835.png)
 
 [antarcticglaciers.org](http://www.antarcticglaciers.org)
 
