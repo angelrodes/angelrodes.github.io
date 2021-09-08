@@ -10,23 +10,24 @@ Online sessions on how to create programs that access, sort, manipulate and repr
 ## Sessions
 
 1. User input
-    * Command-window dialogs 
-    * Graphical dialogs 
+    * Command-window dialogs
+    * Graphical dialogs
+    * Assign variables: strings and numbers
 2. Manipulating files and folders
     * Paths
     * Moving between paths
     * Listing files
-3. Regular expressions (RegEx)
-    * Quantifiers
-    * Anchors
-    * Groups
-    * Operators
-    * Classes
+3. Find (and replace) operations on strings: regular expressions
+    * Special characters (operators and anchors)
+    * Groups and quantifiers
+    * Regex games
 5. Reading files
     * Lines and columns
     * Sorting
+    * Find sample data
 6. Exercises with AMS raw data
     * Represent current stability
+    * Get raw event data
     * Change detector gates
 
 <!--
