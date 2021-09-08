@@ -13,14 +13,14 @@ Online sessions on how to create programs that access, sort, manipulate and repr
     * Command-window dialogs
     * Graphical dialogs
     * Assign variables: strings and numbers
-2. Manipulating files and folders
-    * Paths
-    * Moving between paths
-    * Listing files
-3. Find (and replace) operations on strings: regular expressions
+2. Find (and replace) operations on strings: regular expressions
     * Special characters (operators and anchors)
     * Groups and quantifiers
     * Regex games
+3. Manipulating files and folders
+    * Paths
+    * Moving between paths
+    * Listing files
 5. Reading files
     * Lines and columns
     * Sorting
