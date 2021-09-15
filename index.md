@@ -35,3 +35,5 @@ Rodes, A. (2021) Matlab for Geoscientists v1.0. *Zenodo*, 354895052. doi:10.5281
 
 [**angelrodes.com**](https://angelrodes.com)
 
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/angelrodes?tab=repositories)
+
