@@ -1,5 +1,3 @@
-# CISC
-
 Convocatoria: *Doctor Fuera de Convenio - Agencia Estatal CSIC*
 
 Perfil: **Modelización Geodinámica**
