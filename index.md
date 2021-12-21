@@ -1,6 +1,6 @@
-# Manipulating large datasets in MATLAB/Octave
+# MATLAB cosmo sessions 2022
 
-[Draft for the coming sessions.](https://angelrodes.github.io/large_datasets/)
+[Draft for the coming sessions.](https://angelrodes.github.io/cosmo_sessions_2022/)
 
 ---
 
