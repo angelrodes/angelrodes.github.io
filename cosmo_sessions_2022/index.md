@@ -31,3 +31,7 @@ We will go through some existing scripts to learn some useful methods to work wi
     * Manipulating files and folders (*script coming soon*).
     * Input data from text files and organise it.
     * Plotting time series.
+
+<!--
+https://doodle.com/poll/qtutiw26d286d26h?utm_source=poll&utm_medium=link
+-->
