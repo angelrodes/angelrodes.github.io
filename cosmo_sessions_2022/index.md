@@ -22,9 +22,9 @@ These sessions require some basic understanding of MATLAB/Octave language. [Here
     * We will learn how to produce camelplots, the different methods to get age averages and identify outliers, and how to work with sequential ages in MATLAB.
 3. Burial dating
     * [Working with constant and time-dependent production rates consitently](https://angelrodes.wordpress.com/2021/12/15/average-cosmogenic-production-rate-calculator/).
-    * How to plot bananas in MATLAB.
+    * How to plot bananas in MATLAB (*script coming soon*).
     * Methods for calculating burial ages.
 3. AMS raw data
     * Manipulating files and folders.
     * Input data from text files and organizing it.
-    * Plotting data.
+    * Plotting time series.
