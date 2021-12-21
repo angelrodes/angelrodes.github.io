@@ -1,12 +1,14 @@
 # MATLAB cosmo sessions 2022
 
+<!--
 > Draft of the sessions I will be delivering soon.
+-->
 
 Online sessions on the usage and understanding of scripts that might be useful on the interpretation of cosmonuclide data.
 
 We will go through some existing scripts to learn some useful methods to work with cosmo-related data in MATLAB/Octave.
 
-These sessions require some basic understanding of MATLAB/Octave language. [Here](https://angelrodes.github.io/Matlab_for_Geoscientists/) you can find an introductory course. 
+> These sessions require some basic understanding of the MATLAB/Octave language. [Here](https://angelrodes.github.io/Matlab_for_Geoscientists/) you can find an introductory course. 
 
 Ángel Rodés, 2022 \
 [angelrodes.com](https://angelrodes.wordpress.com/)
