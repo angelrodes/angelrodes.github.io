@@ -19,7 +19,7 @@ These sessions require some basic understanding of MATLAB/Octave language. [Here
     * We will go through **ICPOESdatared_vXX.m** to understand how the script imports the data exported from Qtegra, performs the analyte calibrations and averages, plots results, and diplay results in a excel-friendly format.
 2. Statistics
     * Scripts: [Cosmogenic Exposure Age Averages (CEAA)](https://github.com/angelrodes/CEAA) and [Cosmo-Ages Sequence Calculator (CASC)](https://github.com/angelrodes/CASC).   Download all the files in the previous links.
-    * We will learn how to produce camelplots, the different methods to get age averages and identify outliers, and how to work with sequential ages in MATLAB.
+    * We will learn how to produce camelplots, the different [methods to get age averages](https://angelrodes.wordpress.com/2020/12/07/cosmogenic-exposure-age-averages/) and identify outliers, and how to work with sequential ages in MATLAB.
 3. Burial dating
     * [Working with constant and time-dependent production rates consitently](https://angelrodes.wordpress.com/2021/12/15/average-cosmogenic-production-rate-calculator/).
     * How to plot bananas in MATLAB (*script coming soon*).
