@@ -25,6 +25,6 @@ These sessions require some basic understanding of MATLAB/Octave language. [Here
     * How to plot bananas in MATLAB (*script coming soon*).
     * Methods for calculating burial ages.
 3. AMS raw data
-    * Manipulating files and folders.
-    * Input data from text files and organizing it.
+    * Manipulating files and folders (*script coming soon*).
+    * Input data from text files and organise it.
     * Plotting time series.
