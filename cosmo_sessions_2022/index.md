@@ -21,7 +21,7 @@ We will go through some existing scripts to learn some useful methods to work wi
     * These scripts are used to calibrate ICP-OES data using the data from all standards, to perform some quality checks, and output data in a useful format.
     * We will go through **ICPOESdatared_vXX.m** to understand how the script imports the data exported from Qtegra, performs the analyte calibrations and averages, plots results, and display results in a excel-friendly format.
 2. Statistics
-    * Scripts: [Cosmogenic Exposure Age Averages (CEAA)](https://github.com/angelrodes/CEAA) and [Cosmo-Ages Sequence Calculator (CASC)](https://github.com/angelrodes/CASC).   Download all the files in the previous links.
+    * Scripts: [Cosmogenic Exposure Age Averages (CEAA)](https://github.com/angelrodes/CEAA) , [Cosmo-Ages Plotter (CAP)](https://github.com/angelrodes/CAP) and [Cosmo-Ages Sequence Calculator (CASC)](https://github.com/angelrodes/CASC).   Download all the files in the previous links.
     * We will learn how to produce [camelplots](https://cosmognosis.wordpress.com/2011/07/25/what-is-a-camel-diagram-anyway/), the different [methods to get age averages](https://angelrodes.wordpress.com/2020/12/07/cosmogenic-exposure-age-averages/) and identify outliers, and how to work with sequential ages in MATLAB.
 3. Burial dating
     * [Working with constant and time-dependent production rates consistently](https://angelrodes.wordpress.com/2021/12/15/average-cosmogenic-production-rate-calculator/).
