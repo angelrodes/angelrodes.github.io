@@ -35,3 +35,8 @@ We will go through some existing scripts to learn some useful methods to work wi
 <!--
 https://doodle.com/poll/qtutiw26d286d26h?utm_source=poll&utm_medium=link
 -->
+
+<!--
+Matlab cosmo-session 24/01/2022 "ICP-OES data reduction"
+https://uofglasgow.zoom.us/rec/share/zmYrfBtFhdFNB9KUg-iYkrx-plpZfXE0e5XkPwOCUFbcW8quhaM6rA2sfxEPxQVE.cOcOWbJTD_TokI60?startTime=1643026431000 (Passcode: =0&T1?Jv)
+-->
