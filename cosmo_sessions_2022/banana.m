@@ -172,7 +172,7 @@ chisq= ((Obj_10-Model10(guess_er,guess_t))/dObj_10)^2 + ((Obj_26-Model26(guess_e
 
 % start iterating
 iteration_number=0;
-while chisq<2e-4 % try to achieve a solution very close to C10 and C26 (chisq<2e-4 correponds to the 1% central area of the ellipse)
+while chisq>2e-4 % try to achieve a solution very close to C10 and C26 (chisq less or equal to 2e-4 correponds to the 1% central area of the ellipse)
   iteration_number=iteration_number+1; % this is just a counter
   guess_t=interp1(Model_ratio(guess_er,many_times),many_times,Obj_26/Obj_10); % find the corresponding burial age using the ratio
   guess_er=interp1(Model10(many_erosions,guess_t),many_erosions,Obj_10); % find the corresponding eosion
