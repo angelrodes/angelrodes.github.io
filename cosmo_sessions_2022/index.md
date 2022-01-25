@@ -26,7 +26,7 @@ We will go through some existing scripts to learn some useful methods to work wi
     * We will learn how to produce [camelplots](https://cosmognosis.wordpress.com/2011/07/25/what-is-a-camel-diagram-anyway/), the different [methods to get age averages](https://angelrodes.wordpress.com/2020/12/07/cosmogenic-exposure-age-averages/) and identify outliers, and how to work with sequential ages in MATLAB.
 3. Burial dating (31/01/2022)
     * [Working with constant and time-dependent production rates consistently](https://angelrodes.wordpress.com/2021/12/15/average-cosmogenic-production-rate-calculator/).
-    * How to plot bananas in MATLAB (*script coming soon*).
+    * How to plot bananas in MATLAB. Script: [banana.m](https://raw.githubusercontent.com/angelrodes/angelrodes.github.io/main/cosmo_sessions_2022/banana.m).
     * Methods for calculating burial ages.
 3. AMS raw data (02/02/2022)
     * Manipulating files and folders (*script coming soon*).
