@@ -1,6 +1,6 @@
 # MATLAB cosmo sessions 2022
 
-[Draft for the coming sessions.](https://angelrodes.github.io/cosmo_sessions_2022/)
+[Programme and materials for the ongoing sessions.](https://angelrodes.github.io/cosmo_sessions_2022/)
 
 ---
 
