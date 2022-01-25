@@ -19,7 +19,7 @@ close all hidden % remove previous plots
 % SSC	27.0845	105.1631	1800	std	0	2.6	1	0	2019;
 % SSC	Be-10	quartz	111756	3409	NIST_27900;
 % SSC	Al-26	quartz	416017	31939	Z92-0222;
-
+% As described in the old-CRONUS v.3 page [https://hess.ess.washington.edu/math/docs/v3/v3_input_explained.html]
 
 % We will need the concentrations and uncertainties:
 C10=111756; % atoms/g
@@ -31,17 +31,15 @@ sample_name='SSC';
 % and the density of the rock at the source area:
 density=2.6; % g/cm^3 (or kg per litre)
 
-% As described in the old-CRONUS v.3 page [https://hess.ess.washington.edu/math/docs/v3/v3_input_explained.html]
-
-% We can input the data in the old-CRONUS v.3 erosion rate calculator [https://hess.ess.washington.edu/math/v3/v3_erosion_in.html]
+% We can input the CRONUS-input lines in the old-CRONUS v.3 erosion rate calculator [https://hess.ess.washington.edu/math/v3/v3_erosion_in.html]
 % Remember to remove theinitial comment symbol (%) first!
 % These are the apparent erosion rates that we get for the LSDn scaling:
 
-% Sample name	Nuclide	Erosion rate (m/Myr)	Internal uncert (m/Myr)	External uncert (m/Myr)
-% SSC 	Be-10 (qtz)	65 	1.99 	4.34
-% SSC 	Al-26 (qtz)	116 	8.98 	13.5
+% Sample name	Nuclide	Erosion rate (m/Myr)	External uncert (m/Myr)
+% SSC 	Be-10 (qtz)	65 	4.34
+% SSC 	Al-26 (qtz)	116 	13.5
 
-% We cal use these data to calculate the long-term average-prodution-rates using the "Average cosmogenic production rate calculator":
+% We cal use these data to approximate the long-term average-prodution-rates using the "Average cosmogenic production rate calculator":
 % https://github.com/angelrodes/average_cosmogenic_production_rate_calculator/blob/main/Average_cosmo_prodution.xlsx?raw=true
 
 % And we get:
@@ -64,19 +62,22 @@ l26=9.8319E-07; % years^-1
 % [https://doi.org/10.1016/0012-821X(91)90220-C]
 % Here, we will express the equations as shown in Rodes et al. (2014): equations 4 and 5
 % [https://doi.org/10.1016/j.quageo.2013.10.002]
-Model=...
-   @(Prodution_rates,Attenuation_lengths,decay_constant,erosion,time)...
-   sum(...
-   (Prodution_rates./(erosion.*density./Attenuation_lengths+decay_constant)).*exp(-time*decay_constant)...
-   ,1);
+Model = @(Prodution_rates,Attenuation_lengths,decay_constant,erosion,time)...
+   sum( (Prodution_rates./(erosion.*density./Attenuation_lengths+decay_constant)).*exp(-time*decay_constant) ,1);
 % note that we use .* and ./  instead of * and / to allow using lost of erosion and times as horizontal arrays.
-% also note that we sum in the direction "1" to sum the nuclides produced by all the production mechanism (columns) that are described in the different lines
+% also note that we sum in the direction "1" to sum the nuclides produced by all the production mechanism (columns; vertical arrays) that are listed in 4 rows
 
 % Simplify for Be-10 and Al-26
 Model10 = @(erosion,time) Model(P10,L,l10,erosion,time);
 Model26 = @(erosion,time) Model(P26,L,l26,erosion,time);
 % also simplify for ratio
 Model_ratio = @(erosion,time) Model(P26,L,l26,erosion,time)./Model(P10,L,l10,erosion,time);
+
+% Play with this:
+% Model10(0,0)
+% Model10(0,1500000)
+% Model_ratio(100/1E4,0)
+% Model_ratio(0,0)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -86,13 +87,13 @@ erosion_array=[0 1 10 100 1000 10000]/1E4; % cm/year (m/Ma divided by 1E4)
 time_array=[0 0.1 0.5 1 1.5 2 3 4 6 8 10 15 20]*1E6; % years (Ma multiplied by 1E6)
 
 % define the points for each line:
-points_per_line=1000;
+points_per_line=1000; % banana lines will be defined by this number of points
 many_erosions=[0,logspace(-2,6,points_per_line-1)]/1E4; % cm/year (m/Ma divided by 1E4)
 many_times=[0, logspace(0,8,points_per_line-1)]; % years
 
 % Start figure
-figure
-hold on
+figure % open a new figure
+hold on % do not clear it
 
 % Write labels and title
 xlabel('Be-10')
@@ -171,7 +172,7 @@ chisq= ((Obj_10-Model10(guess_er,guess_t))/dObj_10)^2 + ((Obj_26-Model26(guess_e
 
 % start iterating
 iteration_number=0;
-while chisq>2e-4 % try to achieve a solution very close to C10 and C26
+while chisq<2e-4 % try to achieve a solution very close to C10 and C26 (chisq<2e-4 correponds to the 1% central area of the ellipse)
   iteration_number=iteration_number+1; % this is just a counter
   guess_t=interp1(Model_ratio(guess_er,many_times),many_times,Obj_26/Obj_10); % find the corresponding burial age using the ratio
   guess_er=interp1(Model10(many_erosions,guess_t),many_erosions,Obj_10); % find the corresponding eosion
