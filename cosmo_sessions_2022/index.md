@@ -16,18 +16,19 @@ We will go through some existing scripts to learn some useful methods to work wi
 
 ## Sessions
 
-1. ICP-OES data reduction
+1. ICP-OES data reduction (24/01/2022)
+    * [Slides](https://docs.google.com/presentation/d/e/2PACX-1vR2xctVePGAuNEMkh7fJjNJ69uUoh5nZGex0U1TH-QxE0nF8IKKNOoEAh2Gbm_p-8lJBGLnTZaS-mDF/pub?start=false&loop=false&delayms=3000)
     * Scripts: [ICPOES-datared](https://github.com/angelrodes/ICPOES-datared). Download all the files in the previous link.
     * These scripts are used to calibrate ICP-OES data using the data from all standards, to perform some quality checks, and output data in a useful format.
     * We will go through **ICPOESdatared_vXX.m** to understand how the script imports the data exported from Qtegra, performs the analyte calibrations and averages, plots results, and display results in a excel-friendly format.
-2. Statistics
+2. Statistics (26/01/2022)
     * Scripts: [Cosmogenic Exposure Age Averages (CEAA)](https://github.com/angelrodes/CEAA) , [Cosmo-Ages Plotter (CAP)](https://github.com/angelrodes/CAP) and [Cosmo-Ages Sequence Calculator (CASC)](https://github.com/angelrodes/CASC).   Download all the files in the previous links.
     * We will learn how to produce [camelplots](https://cosmognosis.wordpress.com/2011/07/25/what-is-a-camel-diagram-anyway/), the different [methods to get age averages](https://angelrodes.wordpress.com/2020/12/07/cosmogenic-exposure-age-averages/) and identify outliers, and how to work with sequential ages in MATLAB.
-3. Burial dating
+3. Burial dating (31/01/2022)
     * [Working with constant and time-dependent production rates consistently](https://angelrodes.wordpress.com/2021/12/15/average-cosmogenic-production-rate-calculator/).
     * How to plot bananas in MATLAB (*script coming soon*).
     * Methods for calculating burial ages.
-3. AMS raw data
+3. AMS raw data (02/02/2022)
     * Manipulating files and folders (*script coming soon*).
     * Input data from text files and organise it.
     * Plotting time series.
