@@ -181,7 +181,7 @@ while chisq>2e-4 % try to achieve a solution very close to C10 and C26 (chisq le
 end
 
 % display our guesses:
-disp('Final guesses:')
+disp('Central solution:')
 disp([ 'Burial age = ' num2str(guess_t/1e6) ' Ma'])
 disp([ 'erosion rate = ' num2str(guess_er*1e4) ' m/Ma'])
 
