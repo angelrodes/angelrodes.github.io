@@ -34,6 +34,12 @@ We will go through some existing scripts to learn some useful methods to work wi
     * Plotting time series.
 
 <!--
+AMS data
+https://drive.google.com/drive/u/1/folders/1cMc5_PBexoFGcrwxKsTgQVXr8rYYqN36
+cuenta elmonobueno
+-->
+
+<!--
 https://doodle.com/poll/qtutiw26d286d26h?utm_source=poll&utm_medium=link
 -->
 
