@@ -16,6 +16,22 @@
 
 ![Geológico_atlántico](https://user-images.githubusercontent.com/53089531/198346312-fb6494d7-dc3b-495b-8a95-e2c79817c36b.jpeg)
 
+## Serie MAGNA
+
+### Hoja 119
+
+![Magna_119](https://user-images.githubusercontent.com/53089531/198353275-3cb9f769-56ef-4451-8e27-67f8f8358e17.png)
+
+![Magna_119_leyenda_1](https://user-images.githubusercontent.com/53089531/198353305-19130f83-66a6-4e50-8a0a-86637765c22c.png)
+
+![Magna_119_leyenda_2](https://user-images.githubusercontent.com/53089531/198353331-022bc038-9afb-430a-b0f7-50ceba6fa870.png)
+
+![Magna_119_leyenda_3](https://user-images.githubusercontent.com/53089531/198353342-64fb386f-134c-4bd5-bc2d-fd7320d2adb5.png)
+
+![Magna_119_leyenda_4](https://user-images.githubusercontent.com/53089531/198353365-7be1a9ae-534c-45ee-8139-cc911f5c5fcc.png)
+
+
+
 ## Mapas del [visor del IGME](https://info.igme.es/visor/)
 
 ### Mapa geológico contínuo 1:50.000 (GEODE)
