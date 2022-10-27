@@ -20,8 +20,13 @@
 
 ### Mapa geológico contínuo 1:50.000 (GEODE)
 
-![Geológico_Pindo](https://user-images.githubusercontent.com/53089531/198347060-4e2042cf-91be-4481-b8c2-0573ca132d42.jpeg)
+![Geológico_Pindo2](https://user-images.githubusercontent.com/53089531/198348532-0a8a3d0b-02a2-40c0-ba33-9910b781ad47.png)
 
 Mapa con etiquetas 
 
 ![Geológico_Pindo_etiquetas](https://user-images.githubusercontent.com/53089531/198347714-742c2e53-ff4f-423d-a9d8-ee9cd2a43029.jpg)
+
+# Comparte esta página
+
+![QR](https://user-images.githubusercontent.com/53089531/198349163-463506ba-d3fd-4d73-9cf0-6343e81ff769.png)
+
