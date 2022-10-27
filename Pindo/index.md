@@ -10,11 +10,15 @@
 
 ![iberpix4](https://user-images.githubusercontent.com/53089531/198346043-d836b470-f2a0-472b-8911-c3983a60aa35.png)
 
+---
+
 # Mapas geológicos
 
 ## Detalle del mapa geológico de Europa de la [Wikipedia](https://commons.wikimedia.org/wiki/File:Europe_geological_map-fr.jpg)
 
 ![Geológico_atlántico](https://user-images.githubusercontent.com/53089531/198346312-fb6494d7-dc3b-495b-8a95-e2c79817c36b.jpeg)
+
+---
 
 ## Serie MAGNA
 
@@ -23,14 +27,19 @@
 ![Magna_119](https://user-images.githubusercontent.com/53089531/198353275-3cb9f769-56ef-4451-8e27-67f8f8358e17.png)
 
 ![Magna_119_leyenda_1](https://user-images.githubusercontent.com/53089531/198353305-19130f83-66a6-4e50-8a0a-86637765c22c.png)
-
 ![Magna_119_leyenda_2](https://user-images.githubusercontent.com/53089531/198353331-022bc038-9afb-430a-b0f7-50ceba6fa870.png)
-
 ![Magna_119_leyenda_3](https://user-images.githubusercontent.com/53089531/198353342-64fb386f-134c-4bd5-bc2d-fd7320d2adb5.png)
-
 ![Magna_119_leyenda_4](https://user-images.githubusercontent.com/53089531/198353365-7be1a9ae-534c-45ee-8139-cc911f5c5fcc.png)
 
+### Hoja 93
 
+![Magna_93](https://user-images.githubusercontent.com/53089531/198354222-2dd93678-a953-4ab8-b31c-d3fc6ad5df6f.png)
+
+![Magna_93_leyenda_1](https://user-images.githubusercontent.com/53089531/198354275-3a7858e8-50cd-4e9c-8b38-5ee8c67afe65.png)
+![Magna_93_leyenda_2](https://user-images.githubusercontent.com/53089531/198354304-aef03560-5761-496d-b697-c52ec2f3b586.png)
+![Magna_93_leyenda_3](https://user-images.githubusercontent.com/53089531/198354321-82b71da5-462b-4c6b-a945-b67d2e3c43c0.png)
+
+---
 
 ## Mapas del [visor del IGME](https://info.igme.es/visor/)
 
@@ -41,6 +50,8 @@
 Mapa con etiquetas (recintos geología)
 
 ![Screenshot at 2022-10-27 18-50-34](https://user-images.githubusercontent.com/53089531/198351886-35be96c9-6afd-4aaa-b0b2-f8b643fc0228.png)
+
+---
 
 # Comparte esta página
 
