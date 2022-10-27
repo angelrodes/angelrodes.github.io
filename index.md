@@ -52,7 +52,11 @@ Online sessions on the usage and understanding of scripts that might be useful o
     * Manipulating files and folders (*script coming soon*).
     * Input data from text files and organise it.
     * Plotting time series.
+---
 
+# Salida de campo Monte Louro - Cabo Fisterra
+
+## [Mapas](https://angelrodes.github.io/Pindo/)
 
 ---
 
