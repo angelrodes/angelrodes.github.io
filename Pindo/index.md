@@ -24,7 +24,7 @@
 
 Mapa con etiquetas (recintos geología)
 
-![Geológico_Pindo_etiquetas](https://user-images.githubusercontent.com/53089531/198347714-742c2e53-ff4f-423d-a9d8-ee9cd2a43029.jpg)
+![Screenshot at 2022-10-27 18-50-34](https://user-images.githubusercontent.com/53089531/198351886-35be96c9-6afd-4aaa-b0b2-f8b643fc0228.png)
 
 # Comparte esta página
 
