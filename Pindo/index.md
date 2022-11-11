@@ -24,7 +24,7 @@
 
 ---
 
-## Serie MAGNA
+## [Serie MAGNA](https://info.igme.es/cartografiadigital/geologica/Magna50.aspx#busqueda)
 
 ### Hoja 119
 
