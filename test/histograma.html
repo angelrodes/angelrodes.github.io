@@ -32,7 +32,7 @@
         const layout = { title: "Histograma y campana de Gauss", xaxis: { title: "Valores" }, yaxis: { title: "N" } };
         const data = [{ x: values, type: "histogram", histnorm: "" , name: "Datos"}];
         const x = new Array(100).fill(0).map((val, index) => mean - 3 * stddev + index * 6 * stddev / 99);
-        const y = x.map(val => Math.exp(-Math.pow(val - mean, 2) / (2 * Math.pow(stddev, 2))) *n*0.68/4);
+        const y = x.map(val => Math.exp(-Math.pow(val - mean, 2) / (2 * Math.pow(stddev, 2))) *Math.sqrt(n)*2);
         data.push({ x: x, y: y, type: "scatter", mode: "lines", line: { color: "red" }, name: "Curva gausiana" });
 //      const data = [{ x: x, y: y, type: "scatter", mode: "lines", line: { color: "red" }, name: "Gaussian Curve" }]
         Plotly.newPlot("plot", data, layout);
