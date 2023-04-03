@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Histogram Plotter</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <h1>Histogram Plotter</h1>
+    <p>Enter a group of values separated by spaces, tabulators or newlines:</p>
+    <textarea id="input" rows="5" cols="50"></textarea>
+    <button onclick="plot()">Plot</button>
+    <div id="plot"></div>
+    <script>
+      function plot() {
+        const inputString = document.getElementById("input").value;
+        const values = inputString.split(/\s+/).map(v => parseFloat(v));
+        const layout = { title: "Histogram Plot", xaxis: { title: "Values" }, yaxis: { title: "Frequency" } };
+        const data = [{ x: values, type: "histogram" }];
+        Plotly.newPlot("plot", data, layout);
+      }
+    </script>
+  </body>
+</html>
