@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Histogramas, medias y medianas</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  </head>
+  <body>
+    <h1>Medias y medianas</h1>
+    <p>Meter datos separados por espacios o saltos de línea:</p>
+    <textarea id="input" rows="5" cols="50"></textarea>
+    <button onclick="plot()">Calcular</button>
+    <p>Media: <span id="mean"></span> ± <span id="stddev"></span></p>
+        <p>Mediana: <span id="median"></span> ± <span id="mad"></span></p>
+        <p>N: <span id="n"></span></p>
+        <p>test: <span id="test"></span></p>
+        <div id="plot"></div>
+    <script>
+      function plot() {
+        const inputString = document.getElementById("input").value;
+        const values = inputString.split(/\s+/).map(v => parseFloat(v.replace(',', '.'))).filter(Boolean);
+//       const n=values.length;
+        const mean = values.reduce((acc, val) => acc + val, 0) / values.length;
+        const variance = values.reduce((acc, val) => acc + Math.pow(val - mean, 2), 0) / values.length;
+        const stddev = Math.sqrt(variance);
+        const precision=Math.max(0,-(Math.floor(Math.log10(stddev)-1)))
+//if (precision < 0) {precision = 0;}
+        const sortedValues = values.slice().sort((a, b) => a - b);
+        const n = sortedValues.length;
+        const median = (n % 2 === 0) ? (sortedValues[n / 2 - 1] + sortedValues[n / 2]) / 2 : sortedValues[Math.floor(n / 2)];
+        const mad = sortedValues.reduce((acc, val) => acc + Math.abs(val - median), 0) / n;
+        const ymax=n/stddev*Math.sqrt(2 * Math.PI );
+        const layout = { title: "Histograma y campana de Gauss", xaxis: { title: "Valores" }, yaxis: { title: "N" } };
+        const data = [{ x: values, type: "histogram", histnorm: "" , name: "Datos"}];
+        const x = new Array(100).fill(0).map((val, index) => mean - 3 * stddev + index * 6 * stddev / 99);
+        const y = x.map(val => Math.exp(-Math.pow(val - mean, 2) / (2 * Math.pow(stddev, 2))) *n*0.68/4);
+        data.push({ x: x, y: y, type: "scatter", mode: "lines", line: { color: "red" }, name: "Curva gausiana" });
+//      const data = [{ x: x, y: y, type: "scatter", mode: "lines", line: { color: "red" }, name: "Gaussian Curve" }]
+        Plotly.newPlot("plot", data, layout);
+        document.getElementById("mean").innerHTML = mean.toFixed(precision).replace('.', ',');
+        document.getElementById("stddev").innerHTML = stddev.toFixed(precision).replace('.', ',');
+        document.getElementById("n").innerHTML = n.toFixed(0).replace('.', ',');
+        document.getElementById("test").innerHTML = precision.toFixed(0).replace('.', ',');
+        document.getElementById("median").innerHTML = median.toFixed(precision).replace('.', ',');
+        document.getElementById("mad").innerHTML = mad.toFixed(precision).replace('.', ',');
+        MathJax.typeset();
+      }
+    </script>
+  </body>
+</html>
+
+     
