@@ -5,10 +5,10 @@
   </head>
   <body>
     <h1>Atmospheric Pressure to Elevation Calculator</h1>
-    <p>Enter the atmospheric pressure below:</p>
-    <input type="number" id="pressure" name="pressure" min="0" step="0.01">
+    <p>Enter a list of atmospheric pressure values (in hPa) separated by commas:</p>
+    <textarea id="pressures" name="pressures" rows="5" cols="50"></textarea>
     <button onclick="calculate()">Calculate</button>
-    <p id="result"></p>
+    <p id="results"></p>
     <script>
       function calculate() {
         const seaLevelPressure = 1013.25; // in hPa
@@ -17,9 +17,15 @@
         const molarMassOfDryAir = 0.0289644; // in kg/mol
         const temperatureAtSeaLevel = 288.15; // in K
         const g = 9.80665; // in m/s^2
-        const pressure = parseFloat(document.getElementById("pressure").value);
-        const elevation = (temperatureAtSeaLevel / lapseRate) * (1 - Math.pow(pressure / seaLevelPressure, (gasConstant * lapseRate) / (g * molarMassOfDryAir)));
-        document.getElementById("result").innerHTML = `The elevation is approximately ${elevation.toFixed(2)} meters.`;
+        const pressuresString = document.getElementById("pressures").value;
+        const pressures = pressuresString.split(",").map(p => parseFloat(p));
+        let resultsString = "";
+        for (let i = 0; i < pressures.length; i++) {
+          const pressure = pressures[i];
+          const elevation = (temperatureAtSeaLevel / lapseRate) * (1 - Math.pow(pressure / seaLevelPressure, (gasConstant * lapseRate) / (g * molarMassOfDryAir)));
+          resultsString += `Atmospheric pressure ${pressure} hPa corresponds to an elevation of ${elevation.toFixed(2)} meters.<br>`;
+        }
+        document.getElementById("results").innerHTML = resultsString;
       }
     </script>
   </body>
