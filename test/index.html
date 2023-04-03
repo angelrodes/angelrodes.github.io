@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1>Atmospheric Pressure to Elevation Calculator</h1>
-    <p>Enter a list of atmospheric pressure values (in hPa) separated by spaces:</p>
+    <p>Enter a list of atmospheric pressure values (in hPa) separated by spaces or returns:</p>
     <textarea id="pressures" name="pressures" rows="5" cols="50"></textarea>
     </br>
     <button onclick="calculate()">Calculate</button>
@@ -19,7 +19,7 @@
         const temperatureAtSeaLevel = 288.15; // in K
         const g = 9.80665; // in m/s^2
         const pressuresString = document.getElementById("pressures").value;
-        const pressures = pressuresString.split(" ").map(p => parseFloat(p));
+        const pressures = pressuresString.split(/\s+/).map(p => parseFloat(p));
         let resultsString = "";
         for (let i = 0; i < pressures.length; i++) {
           const pressure = pressures[i];
