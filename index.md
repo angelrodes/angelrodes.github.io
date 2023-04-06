@@ -61,6 +61,12 @@ Online sessions on the usage and understanding of scripts that might be useful o
 
 ---
 
+# Estadística
+
+* [Histogramas](https://angelrodes.github.io/histograma)
+
+---
+
 # About me
 
 [**angelrodes.com**](https://angelrodes.com)
