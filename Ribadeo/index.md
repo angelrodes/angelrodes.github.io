@@ -1,16 +1,18 @@
 # Salida de campo Ribadeo - Xistral
 
----
-
-# Mapas topográficos
-
-## [Visor del IGN iberpix](https://www.ign.es/iberpix/visor/)
+## [Itinerario](https://github.com/angelrodes/angelrodes.github.io/raw/main/Ribadeo/Guia_saida_campo_Itinerario_XeoF%C3%ADsica_Territorio.pdf)
 
 ---
 
-# Mapas geológicos
+## Mapas topográficos
 
-## Detalle del mapa geológico de Europa de la [Wikipedia](https://commons.wikimedia.org/wiki/File:Europe_geological_map-fr.jpg)
+### [Visor del IGN iberpix](https://www.ign.es/iberpix/visor/)
+
+---
+
+## Mapas geológicos
+
+### Detalle del mapa geológico de Europa de la [Wikipedia](https://commons.wikimedia.org/wiki/File:Europe_geological_map-fr.jpg)
 
 ![Geológico_atlántico](https://user-images.githubusercontent.com/53089531/198346312-fb6494d7-dc3b-495b-8a95-e2c79817c36b.jpeg)
 
@@ -39,19 +41,21 @@
 
 ---
 
-## Mapas del [visor del IGME](https://info.igme.es/visor/)
+### Mapas del [visor del IGME](https://info.igme.es/visor/)
 
-### Ribadeo
+**Ribadeo**
 
 ![Geo-Ribadeo](https://user-images.githubusercontent.com/53089531/235997440-fe855cbf-8ec3-44b1-a837-0aa88ef35dea.jpg)
 
-### Xistral
+---
+
+**Xistral**
 
 ![Geo-Xistral](https://user-images.githubusercontent.com/53089531/235997521-734b4b61-92bd-4976-8a64-23cb282b9ea8.jpg)
 
 ---
 
-# Comparte esta página
+## Comparte esta página
 
 ![image](https://user-images.githubusercontent.com/53089531/235998929-796a1841-0748-49f2-8c59-e56aefc3e0e9.png)
 
