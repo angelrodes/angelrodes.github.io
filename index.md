@@ -57,9 +57,9 @@ Online sessions on the usage and understanding of scripts that might be useful o
 
 # Mapas de Galicia
 
-## [Salida de campo Monte Louro - Cabo Fisterra](https://angelrodes.github.io/Pindo/)
+* [Salida de campo Monte Louro - Cabo Fisterra](https://angelrodes.github.io/Pindo/)
 
-## [Salida de campo Ribadeo - Xistral](https://angelrodes.github.io/Ribadeo/)
+* [Salida de campo Ribadeo - Xistral](https://angelrodes.github.io/Ribadeo/). [Itinerario](https://github.com/angelrodes/angelrodes.github.io/raw/main/Ribadeo/Guia_saida_campo_Itinerario_XeoF%C3%ADsica_Territorio.pdf)
 
 ---
 
