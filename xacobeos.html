@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xacobeo Years</title>
+    <style>
+        .timeline {
+            margin-top: 30px;
+        }
+
+        .timeline-year {
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .timeline-bar {
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background-color: #000;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function calculateXacobeoYears() {
+            var startYear = parseInt(document.getElementById('start-year').value);
+            var endYear = parseInt(document.getElementById('end-year').value);
+            var resultContainer = document.getElementById('result');
+            var timelineContainer = document.getElementById('timeline');
+
+            if (isNaN(startYear) || isNaN(endYear)) {
+                resultContainer.innerHTML = 'Please enter valid years.';
+                timelineContainer.innerHTML = '';
+                return;
+            }
+
+            var xacobeoYears = [];
+            for (var year = startYear; year <= endYear; year++) {
+                var date = new Date(year, 6, 25); // July is month 6 (0-indexed)
+
+                if (date.getDay() === 0) { // Sunday is day 0
+                    xacobeoYears.push(year);
+                }
+            }
+
+            if (xacobeoYears.length === 0) {
+                resultContainer.innerHTML = 'No Xacobeo years found between ' + startYear + ' and ' + endYear + '.';
+                timelineContainer.innerHTML = '';
+                return;
+            }
+
+            var timelineHtml = '';
+            var yearsBetweenHtml = '';
+            for (var i = 0; i < xacobeoYears.length; i++) {
+                timelineHtml += '<div class="timeline-year">' + xacobeoYears[i] + '</div>';
+                if (i < xacobeoYears.length - 1) {
+                    var yearsBetween = xacobeoYears[i + 1] - xacobeoYears[i];
+                    var barColorClass = getBarColorClass(yearsBetween);
+                    yearsBetweenHtml += 'Desde ' +xacobeoYears[i] + ' hasta ' + xacobeoYears[i + 1] + ': ' + '<span style="background-color:' + barColorClass + ';">' + yearsBetween + ' años</span><br>';
+                    timelineHtml += '<div class="timeline-bar ' + barColorClass + '"></div>';
+                               }
+            }
+
+            resultContainer.innerHTML = yearsBetweenHtml;
+            timelineContainer.innerHTML = timelineHtml;
+        }
+        function getBarColorClass(yearsBetween) {
+            if (yearsBetween <= 5) {
+                return 'Orange';
+            } else if (yearsBetween <= 6) {
+                return 'Green';
+            } else if (yearsBetween <= 11) {
+                return 'Yellow';
+            } else {
+                return 'Red';
+            }
+        }
+    </script>
+</head>
+<body onload="calculateXacobeoYears()">
+    <h1>Xacobeos</h1>
+    <p>Rango de años:</p>
+
+    <form>
+        <label for="start-year">Desde:</label>
+        <input type="number" id="start-year" required value="1850"><br><br>
+
+        <label for="end-year">Hasta:</label>
+        <input type="number" id="end-year" required value="2150"><br><br>
+
+        <button type="button" onclick="calculateXacobeoYears()">Calcular</button>
+    </form>
+
+<!--
+    <h3><i>Años santos</i> en el rango:</h3>
+    <div id="timeline"></div>
+-->
+
+    <h3><i>Años santos</i> y cadencias:</h3>
+    <div id="result"></div>
+
+    <footer>
+    <hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> <br> Ángel Rodés, 2023 <br>
+      <a href="http:www.angelrodes.com">www.angelrodes.com</a>
+    </footer>
+</body>
+</html>
+
