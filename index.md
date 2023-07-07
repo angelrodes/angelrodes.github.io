@@ -71,6 +71,14 @@ Online sessions on the usage and understanding of scripts that might be useful o
 
 ---
 
+# Geo-jobs - Ofertas de trabajo
+
+* [Geodemia - Oportunidades laborales para geólogos y geógrafos](https://geodemia.wordpress.com/)
+* [Personal Docente Investigador - España](https://serviciopdi.ugr.es/contratado/concursopublico/otrasuniversidades/)
+* [CSIC](https://ips.redsara.es/IPSC/secure/buscarConvocatorias?)
+
+---
+
 # About me
 
 [**angelrodes.com**](https://angelrodes.com)
