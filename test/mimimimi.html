@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Convertir a mimimimimi</title>
+</head>
+<body>
+<h2> Traducir a lenguaje mimimimimi </ h2>
+  </br>
+<img src="https://media.tenor.com/-2nRJSPeMg0AAAAC/snob-mimimi.gif" alt="mimimimi" width="400">
+  </br>
+    </br>
+<!-- 
+ <input type="text" id="text-input"  /> 
+-->
+  <textarea name="Text1" id="text-input" cols="60" rows="8"></textarea>
+  </br>
+  <button id="replace-button">Mimimimimi</button>
+  <pre><p id="output"></p></pre>
+
+  <script>
+    const replaceButton = document.getElementById("replace-button");
+    const outputElement = document.getElementById("output");
+
+    replaceButton.addEventListener("click", () => {
+      const textInput = document.getElementById("text-input").value;
+      const replacedText7 = textInput.replace(/c[auáú]/gi, "ki");
+      const replacedText6 = replacedText7.replace(/gu/gi, "gg");
+      const replacedText5 = replacedText6.replace(/[aeiouü]/gi, "i");
+      const replacedText3 = replacedText5.replace(/[q]/gi, "k");
+      const replacedText2 = replacedText3.replace(/gg/gi, "gu");
+      const replacedText = replacedText2.replace(/[áéíóú]/gi, "í").toLowerCase();
+      outputElement.textContent = replacedText;
+    });
+  </script>
+</body>
+</html>
+
