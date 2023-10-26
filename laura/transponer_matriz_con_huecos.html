@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Transponer matriz con huecos 1</title>
+  <title>Transponer matriz con huecos 2</title>
   <style>
     table {
       border-collapse: collapse;
@@ -25,9 +25,9 @@
   <table id="transposedMatrix"></table>
 
   <script>
-    function transposeMatrix() {
-      // Get the matrix of numbers from the textarea.
-      const matrix = document.getElementById('matrix').value.split('\n').map(row => row.split('\t').map(Number));
+ function transposeMatrix() {
+      // Get the matrix of strings from the textarea.
+      const matrix = document.getElementById('matrix').value.split('\n').map(row => row.split('\t'));
 
       // Create a transposed matrix.
       const transposedMatrix = [];
@@ -35,11 +35,10 @@
         transposedMatrix[2*i] = [];
         transposedMatrix[2*i+1] = [];
         for (let j = 0; j < matrix.length; j++) {
-          transposedMatrix[2*i][j] = matrix[j][i];
-          transposedMatrix[2*i+1][j] =[]
+          transposedMatrix[i*2][j] = String(matrix[j][i]);
         };
-        transposedMatrix[2*i][matrix.length-1] = i+1;
-        transposedMatrix[2*i+1][matrix.length-1] = i+1+0.5;
+        transposedMatrix[i*2][matrix.length-1] = String(1+i);
+        transposedMatrix[i*2+1][matrix.length-1] = String(1+i+0.5);
       }
 
       // Display the transposed matrix in the table.
