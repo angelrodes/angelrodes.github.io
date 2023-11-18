@@ -63,6 +63,7 @@ Online sessions on the usage and understanding of scripts that might be useful o
 
 * [Cadencia años jacobeos](https://angelrodes.github.io/xacobeos)
 
+* [Salida de campo Courel](https://angelrodes.github.io/Courel/)
 ---
 
 # Estadística
