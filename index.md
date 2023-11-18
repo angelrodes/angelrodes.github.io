@@ -1,6 +1,8 @@
-# Matlab for Geoscientists <!--v.2019-->
+# Random teaching stuff
 
-## Chapters
+## Matlab for Geoscientists <!--v.2019-->
+
+### Chapters
 
 <!---
 > I am still migrating these chapters from LaTeX.\
@@ -14,19 +16,19 @@
 5. [Maps](https://angelrodes.github.io/Matlab_for_Geoscientists/5_Maps)
 
 
-## Download
+### Download
 
 * [Book.pdf](https://github.com/angelrodes/Matlab_for_Geoscientists/blob/main/Matlab_Geoscientists_book_20210901.pdf?raw=true)
 * [Slides](https://github.com/angelrodes/Matlab_for_Geoscientists/blob/main/Angel_Rodes_MATLAB_for_Geoscientists_Slides.pdf?raw=true)
 
-## Cite
+### Cite
 
 Rodes, A. (2021) Matlab for Geoscientists v1.0. *Zenodo*, 354895052. doi:10.5281/ZENODO.4663034 \
 [![DOI](https://zenodo.org/badge/354895052.svg)](https://zenodo.org/badge/latestdoi/354895052)
 
 ---
 
-# MATLAB cosmo sessions
+## MATLAB cosmo sessions
 
 <!---
 [Programme and materials for the ongoing sessions.](https://angelrodes.github.io/cosmo_sessions_2022/)
@@ -34,7 +36,7 @@ Rodes, A. (2021) Matlab for Geoscientists v1.0. *Zenodo*, 354895052. doi:10.5281
 
 Online sessions on the usage and understanding of scripts that might be useful on the interpretation of cosmonuclide data.
 
-## Sessions
+### Sessions
 
 1. ICP-OES data reduction
     * [Slides](https://docs.google.com/presentation/d/e/2PACX-1vR2xctVePGAuNEMkh7fJjNJ69uUoh5nZGex0U1TH-QxE0nF8IKKNOoEAh2Gbm_p-8lJBGLnTZaS-mDF/pub?start=false&loop=false&delayms=3000)
@@ -55,7 +57,7 @@ Online sessions on the usage and understanding of scripts that might be useful o
 
 ---
 
-# Galicia
+## Galicia
 
 * [Salida de campo Monte Louro - Cabo Fisterra](https://angelrodes.github.io/Pindo/)
 
@@ -66,7 +68,7 @@ Online sessions on the usage and understanding of scripts that might be useful o
 * [Salida de campo Courel](https://angelrodes.github.io/Courel/)
 ---
 
-# Estadística
+## Estadística
 
 * [Histogramas](https://angelrodes.github.io/histograma)
 
