@@ -28,10 +28,13 @@ We will go through some existing scripts to learn some useful methods to work wi
     * [Working with constant and time-dependent production rates consistently](https://angelrodes.wordpress.com/2021/12/15/average-cosmogenic-production-rate-calculator/).
     * How to plot bananas in MATLAB. Script: [banana.m](https://raw.githubusercontent.com/angelrodes/angelrodes.github.io/main/cosmo_sessions_2022/banana.m).
     * Methods for calculating burial ages.
+
+<!--
 3. AMS raw data (tba)
     * Manipulating files and folders (*script coming soon*).
     * Input data from text files and organise it.
     * Plotting time series.
+-->
 
 <!--
 AMS data
