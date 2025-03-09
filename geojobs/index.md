@@ -8,8 +8,8 @@
 
 <br><br>
 
-<img src="https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/UGR-MARCA-02-color.jpg" alt="" width="100"> [Personal Docente Investigador - España](https://serviciopdi.ugr.es/contratado/concursopublico/otrasuniversidades/)
+<img src="https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/UGR-MARCA-02-color.jpg" alt="" width="100"> [Personal Docente Investigador - España.](https://serviciopdi.ugr.es/contratado/concursopublico/otrasuniversidades/)
 
 <br><br>
 
-<img src="https://ips.redsara.es/IPSC/img/content/logo.png" alt="" width="100"> [CSIC - Inscripción de Pruebas Selectivas](https://ips.redsara.es/IPSC/secure/buscarConvocatorias?)
+<img src="https://ips.redsara.es/IPSC/img/content/logo.png" alt="" width="100"> [CSIC - Inscripción de Pruebas Selectivas.](https://ips.redsara.es/IPSC/secure/buscarConvocatorias?)
