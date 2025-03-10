@@ -1,5 +1,7 @@
 # Geo-jobs - Ofertas de trabajo
 
+## Academic job opportunities for geologists and geographers
+
 <img src="https://listes.services.cnrs.fr/static-sympa/icons/logo_cnrs.png" alt="" width="100"> [IAG – GEOMORPHLIST - electronic mail distribution list for geomorphologists.](https://listes.services.cnrs.fr/wws/info/geomorph-l)
 
 <br><br>
