@@ -24,8 +24,8 @@
 
 - [Universidad de Granada](https://serviciopdi.ugr.es/contratado/concursopublico/ayudantedoctor/) - Ayudante Doctor
 - [Universidad de Granada](https://serviciopdi.ugr.es/contratado/concursopublico/contratadodoctor/convocatorias.htm#contenido) - Contratado Doctor
-- [Universidad de Alicante](https://ssyf.ua.es/es/accesopdi/contratacion-estable/convocatorias-profesorado-contratado-estable-profesor-colaborador-profesor-contratado-doctor.html) - Contratación estable (Profesor Colaborador, Profesor Contratado Doctor)
-- [Universidad de Alicante](https://ssyf.ua.es/es/accesopdi/contratacion-temporal/convocatorias-profesorado-contratado-temporal-ayudante-profesor-ayudante-doctor-profesor-asociado.html) - Contratación temporal (Ayudante, Profesor Ayudante Doctor, Profesor Asociado)
+- [Universidad de Alicante](https://ssp.ua.es/es/accesopdi/profesorado-permamente-laboral/convocatorias-profesorado-permanente-laboral.html) - Contratación estable (Profesor Colaborador, Profesor Contratado Doctor)
+- [Universidad de Alicante](https://ssp.ua.es/es/accesopdi/contratacion-temporal/convocatorias-profesorado-contratado-laboral-profesor-ayudante-doctor-profesor-asociado.html) - Contratación temporal (Ayudante, Profesor Ayudante Doctor, Profesor Asociado)
 - [Universidad Miguel Hernández](https://serviciopdi.umh.es/concursos-acceso/pdi-contratado/) - PDI Contratado
 - [Universidad de Huelva](http://www.uhu.es/planificacion_personal_docente/convocatoria_plazas/contratados/contratados.htm) - PDI Contratado
 - [Universidad de Oviedo](https://www.uniovi.es/gobiernoservicios/rrhh/convocatorias/laboral) - PDI Laboral
