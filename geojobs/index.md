@@ -27,12 +27,11 @@
 - [Universidad de Alicante](https://ssp.ua.es/es/accesopdi/profesorado-permamente-laboral/convocatorias-profesorado-permanente-laboral.html) - Contratación estable (Profesor Colaborador, Profesor Contratado Doctor)
 - [Universidad de Alicante](https://ssp.ua.es/es/accesopdi/contratacion-temporal/convocatorias-profesorado-contratado-laboral-profesor-ayudante-doctor-profesor-asociado.html) - Contratación temporal (Ayudante, Profesor Ayudante Doctor, Profesor Asociado)
 - [Universidad Miguel Hernández](https://serviciopdi.umh.es/concursos-acceso/pdi-contratado/) - PDI Contratado
+- [Universidad de Zaragoza](https://recursoshumanos.unizar.es/servicio-pdi/oposiciones-concursos/ultimas-resoluciones) - PDI (Últimas resoluciones)
 - [Universidad de Huelva](http://www.uhu.es/planificacion_personal_docente/convocatoria_plazas/contratados/contratados.htm) - PDI Contratado
 - [Universidad de Oviedo](https://www.uniovi.es/gobiernoservicios/rrhh/convocatorias/laboral) - PDI Laboral
 - [Universidad del País Vasco](https://www.ehu.eus/es/web/iip/) - PDI
 - [Universidad de Salamanca](https://www.usal.es/concursos-para-la-provision-de-plazas-de-pdi-contratado-laboral) - PDI Contratado Laboral
-- [Universidad de Zaragoza](https://recursoshumanos.unizar.es/servicio-pdi/oposiciones-concursos/ultimas-resoluciones) - PDI (Últimas resoluciones)
-- [Universidad de Zaragoza](https://recursoshumanos.unizar.es/servicio-pdi/oposiciones-concursos/periodo-presentacion) - PDI (Periodo de presentación)
 - [Universitat Politècnica de Catalunya](https://concursospdi.upc.edu/ca/novetats-concursos-pdi) - PDI (Novedades concursos)
 - [Universidad Politécnica de Madrid](https://www.upm.es/Personal/PDI/Concursos/ProfesoresContratados/AyudantesDoctores) - Ayudantes Doctores
 - [Universidad Politécnica de Madrid](https://www.upm.es/Personal/PDI/Concursos/ProfesoresContratados/ProfesoresContratados) - Profesores Contratados
