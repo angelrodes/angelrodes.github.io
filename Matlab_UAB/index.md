@@ -5,6 +5,8 @@
 **Capítulos**
 
 1. [Introducción a Matlab y Octave](https://angelrodes.github.io/Matlab_UAB/1_Introducción_a_Matlab_y_Octave)
+2. [Minería de datos y estadística](https://angelrodes.github.io/Matlab_for_Geoscientists/2_Importing_data_and_Statistics)
+3. [Modelización](https://angelrodes.github.io/Matlab_for_Geoscientists/4_Modeling)
 
 **Descargas**
 
