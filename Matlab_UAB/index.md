@@ -4,7 +4,7 @@
 
 **Capítulos**
 
-1. [Introducción a Matlab y Octave](https://angelrodes.github.io/Matlab_for_Geoscientists/1_Introduction_to_Matlab_and_Octave)
+1. [Introducción a Matlab y Octave](https://angelrodes.github.io/Matlab_UAB/1_Introducción_a_Matlab_y_Octave)
 
 **Descargas**
 
