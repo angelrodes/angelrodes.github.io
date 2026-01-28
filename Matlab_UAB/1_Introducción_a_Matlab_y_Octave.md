@@ -680,8 +680,10 @@ espesor de nieve/hielo sea estable.
 glaciares durante el Younger Dryas (ΔT=-4 &deg;C)? ¿Y durante el último máximo glaciar (ΔT=-6 &deg;C)?
 
 
-
 Puedes generar un gráfico como este:
 
-![](https://user-images.githubusercontent.com/53089531/131700264-5be0f18b-b250-4839-9b70-72c4f8cb038d.png)
+![untitled](https://github.com/user-attachments/assets/3507bff7-4c55-437a-87ee-500b8f5966ef)
+
+*Ejercicio resuelto [aquí](https://raw.githubusercontent.com/angelrodes/angelrodes.github.io/refs/heads/main/Matlab_UAB/Ejercicio_1_resuelto.m)*
+
 
